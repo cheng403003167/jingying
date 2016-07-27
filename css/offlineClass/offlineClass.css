@@ -481,19 +481,28 @@ img {
 }
 .offline_detailBg .offline_courseRight .offline_hotCourse ul {
   margin-bottom: 26px;
+<<<<<<< HEAD
   padding-bottom: 30px;
+=======
+>>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
 } /* ul end */
 .offline_detailBg .offline_courseRight .offline_hotCourse ul li {
   padding: 9px;
   line-height: 26px;
   color: #333;
   border: 1px solid rgba(1, 1, 1, 0);
+<<<<<<< HEAD
 } /* li end */
 .offline_detailBg .offline_courseRight .offline_hotCourse ul li a {
   display: block;
   zoom: 1;
 }
 .offline_detailBg .offline_courseRight .offline_hotCourse ul li a:after {
+=======
+  zoom: 1;
+} /* li end */
+.offline_detailBg .offline_courseRight .offline_hotCourse ul li:after {
+>>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
   display: block;
   overflow: hidden;
   clear: both;
@@ -606,11 +615,19 @@ img {
   color: #666;
 }
 .offline_mask {
+<<<<<<< HEAD
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+=======
+	display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3333;
+>>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
@@ -625,12 +642,19 @@ img {
   width: 490px;
   height: 310px;
   border-radius: 5px;
+<<<<<<< HEAD
 }
 .offline_mask > div > div:first-child {
+=======
+  overflow: hidden;
+}
+.offline_mask > div div:first-child {
+>>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
   height: 32px;
   line-height: 32px;
   font-size: 14px;
   color: #fff;
+<<<<<<< HEAD
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: #29b572;
@@ -643,11 +667,23 @@ img {
   width: 18px;
   height: 18px;
   margin-top: 7px;
+=======
+  background-color: #29b572;
+  padding: 0 15px;
+}
+.offline_mask > div div:first-child p {
+  float: left;
+}
+.offline_mask > div div:first-child a {
+  width: 18px;
+  height: 18px;
+>>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
   float: right;
   background-image: url(../../img/15ico_bg.png);
   background-repeat: no-repeat;
   background-position: right -266px;
 }
+<<<<<<< HEAD
 .offline_mask > div > div:last-child {
   text-align: right;
   padding-right: 10px;
@@ -759,4 +795,6 @@ img {
 .offline_mask .offline_writeDatum .offline_likeCourse ul li:hover {
   background: #fafafa;
 }
+=======
+>>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
 /*# sourceMappingURL=offlineClass.css.map */

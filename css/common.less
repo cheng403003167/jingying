@@ -1,0 +1,200 @@
+@font-color-active:#29b572;
+@font-color1:#333;
+@font-color2:#666;
+@bg-color1:#fff;
+  
+/**************** 头部导航条 begin ****************/
+#header {
+    background-color: @bg-color1;
+    border-bottom: 1px solid #dbdbdb;
+    a {
+        &:hover {
+            color: @font-color-active;
+        }
+    }
+    #nav_head {
+        width: 1224px;
+        height: 90px;
+        margin: 0 auto;
+        ul  {
+            height: 100%;            
+            li {
+                float: left;
+                height: 100%;
+                margin-left: 50px;
+                line-height: 90px;
+                font-size: 1.6rem;
+            }
+            .logo {
+                img {
+                    margin-top: 23px;
+                }
+                margin:0 18px 0 0;
+            }
+            .choose_city {
+                position: relative;
+                width: 64px;
+                line-height: 26px;
+                margin-left: 0;
+                &:hover .city_pop{
+                    display: block;                    
+                }
+                &:hover p {
+                          border-bottom-color: #fff;                          
+                      }               
+                p {
+                    position: absolute;
+                    left: 0;
+                    top: 31px;
+                    display: block;
+                    width: 50px;
+                    height: 26px;
+                    padding-left: 12px;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 1px;
+                    font-size: 1.4rem;
+                    z-index: 2;
+                    &:before {
+                        content:"";
+                        float: right;
+                        width: 10px;
+                        height: 6px;
+                        margin: 10px 10px 0 0;
+                        background:url("../img/icon_down.png");
+                        background-size: 100% 100%;
+                    }                                  
+                }
+                ul {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 58px;
+                    width: 330px;
+                    height: 226px;
+                    border: 1px solid #e0e0e0;
+                    padding: 4px 4px 0 4px;
+                    z-index: 1;
+                    background-color: #fff;
+                    li {                     
+                        width: 33.33%;
+                        height: 52px;
+                        float: left;
+                        margin:20px 0 0 0;
+                        line-height: 28px;
+                        a {
+                            display: block;
+                            width: 78px;
+                            height: 52px;
+                            margin: 0 auto;
+                            font-size: 1.2rem;
+                            text-align: center;
+                            
+                        }
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .nav_right_bar {
+                float: right;
+                div {
+                    width: 82px;
+                    text-align: right;
+                    a {
+                        font-size: 1.4rem;
+                    }
+                    .register_bar {
+                        border-left: 1px solid #666;
+                    }
+                }
+            }
+        }
+    }
+}
+/**************** 头部导航条 end ****************/
+
+
+/**************** 尾部 begin ****************/
+#footer {
+    height: 373px;
+    background-color: #fff;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    #nav_footer {
+        width: 1224px;
+        height: 60px;
+        margin: 0 auto;
+        border-bottom: 1px solid #e0e0e0;
+        .friend_link {
+            font-size: 1.6rem;
+            color: @font-color1;
+            margin-right: 20px;
+        }
+        li {
+            float: left;
+            width: 98px;
+            height: 60px;
+            line-height: 60px;
+            a {
+                color: @font-color2;
+            }
+        }
+        .footer_more {
+            float: right;
+            width: auto;
+        }
+    }
+    #footer_content {
+        width: 1224px;
+        margin: 0 auto;
+        ul {
+            float: left;
+            width: 170px;
+            li {
+                a {
+                    color: @font-color2;
+                }
+                .small_barcode {
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    margin-left: -4px; /* 二维码图的精确性 **/
+                    background: url("../img/2d_barcode.png");
+                    background-size: 100% 100%;
+                }
+                .big_barcode {
+                    display: block;
+                    width: 120px;
+                    height: 120px;
+                    background: url("../img/2d_barcode.png");
+                    background-size: 100% 100%;
+                }
+            }
+            .footer_title {
+                line-height: 78px;
+                a {
+                    color: #333;
+                }
+            }
+        }
+        .right_box {
+            width: 120px;
+            float: right;
+            li {
+                text-align: center;
+            }
+        }
+    }
+    #footer_bottom {
+        border-top: 1px solid #f5f5f5;
+        height: 70px;
+        line-height: 70px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: @font-color2;
+    }
+}
+/**************** 尾部 end ****************/

@@ -51,6 +51,7 @@ $(function(){
 		}
 		
 	})
+<<<<<<< HEAD
 	
 	$(".offline_scheduleConsult").on("click",function(){
 		$(".offline_userName").val("");
@@ -121,4 +122,6 @@ $(function(){
 			$(".offline_mask").hide();
 		}
 	})
+=======
+>>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
 })
