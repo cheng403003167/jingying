@@ -1,4 +1,4 @@
-img {
+ img {
   display: block;
   width: 100%;
 }
@@ -641,5 +641,8 @@ img {
   background-image: url(../../img/15ico_bg.png);
   background-repeat: no-repeat;
   background-position: right -266px;
+}
+.offline_courseTitle{
+	color: #000;
 }
 /*# sourceMappingURL=offlineClass.css.map */

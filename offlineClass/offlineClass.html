@@ -9,27 +9,107 @@
 		<link rel="stylesheet" type="text/css" href="../css/offlineClass/offlineClass.css"/>
 	</head>
 	<body class="offline_bodyBg">
-		
+		<header id="header">
+			<nav id="nav_head">
+				<ul class="clearfix">
+					<li class="logo">
+						<img src="../img/logo.png"/>
+					</li>
+					<li class="choose_city">
+						<p class="clearfix">北京</p>
+						<ul class="clearfix city_pop">
+							<li>							
+								<a href="javascript:void(0)">
+									<img src="../img/beijing.png" alt="" />
+									<span>北京</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/dalian.png"/>
+									<span>大连</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/zhengzhou.png"/>
+									<span>郑州</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/shanghai.png"/>
+									<span>上海</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/guangzhou.png"/>
+									<span>广州</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/xi_an.png"/>
+									<span>西安</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/wuhan.png"/>
+									<span>武汉</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav_active">
+						<a href="javascript:void(0)">首页</a>
+					</li>
+					<li>
+						<a href="offline_class.html">线下课程</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">在线课程</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">学校</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">互联网头条</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">+提问</a>
+					</li>
+					<li class="nav_right_bar">
+						<div class="clearfix">
+							<a href="javascript:void(0)">登陆&nbsp</a>
+							<a href="javascript:void(0)" class="register_bar">&nbsp 注册</a>
+						</div>
+					</li>	
+				</ul>
+									
+			</nav>
+		</header>
 		<section id="offline_header" class="clearfix">
 <!--------------------头部左边的图片-------------------------->
 			<div class="offline_picture">
-				<a href="" class="offline_logo">
+				<a href="javascript:void(0)" class="offline_logo">
 					<img src="../img/offlineCourseLogo1.png" alt="" />
 				</a>
 				<ul class="offline_logoList clearfix">
-					<li><a href=""><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
-					<li><a href=""><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
-					<li><a href=""><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
-					<li><a href=""><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
 				</ul>
 			</div>
 	
 <!--------------------头部右边的简介---------------------------->
 			<div class="offline_synopsis">
-				<h3 class="offline_courseName">一年会员-购买专用连接仅用于购买用-中艺摄影网校</h3>
+				<h3 class="offline_courseName"></h3>
 				<p class="offline_block">
 					<span class="iconfont icon-shouye">蓝鸥科技教育有限公司</span>
-					<a href="###" class="offline_frimSrc">[公司详情]</a>
+					<a href="javascript:void(0)" class="offline_frimSrc">[公司详情]</a>
 				</p>
 				<p class="offline_block"><span class="iconfont icon-locationfill"></span>北京市海淀区清河中街金</p>
 				<div>
@@ -49,8 +129,8 @@
 						<p>评价<span class="offline_colorGreen">1200</span>人</p>
 					</div>
 				</div>
-				<a href="" class="offline_promptlyBuy">立即抢购</a>
-				<a href="" class="offline_scheduleConsult">预约咨询</a>
+				<a href="javascript:void(0)" class="offline_promptlyBuy">立即抢购</a>
+				<a href="javascript:void(0)" class="offline_scheduleConsult">预约咨询</a>
 			</div>
 		</section>
 		
@@ -65,45 +145,44 @@
 				</ul>
 		<!------------------课程详情------------------------------------------------------------->	
 				<div id="offline_courseDetails" class="offline_displayBlock">
-					<!--<div></div>-->
 					<ul>
 						<li>
 							<span>课程类型：</span>
-							<p>4个月IOS高薪就业班</p>
+							<p class="type"></p>
 						</li>
 						<li>
 							<span>上课人数：</span>
-							<p>55人</p>
+							<p class="classnum"></p>
 						</li>
 						<li>
 							<span>课程周期：</span>
-							<p>12个月</p>
+							<p class="classTime"></p>
 						</li>
 						<li>
 							<span>课程价格：</span>
-							<p>1280元</p>
+							<p class="classPrice"></p>
 						</li>
 						<li>
 							<span>学校地址：</span>
-							<p>北京市海淀区清河中街金五星商厦</p>
+							<p class="shoolAdress"></p>
 						</li>
 					</ul>
 					<ul>
 						<li>
 							<span>适合人群：</span>
-							<p>新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村</p>
+							<p class="suitable"></p>
 						</li>
 						<li>
 							<span>教学内容：</span>
-							<p>新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村</p>
+							<p class="contentOfCourses"></p>
 						</li>
 						<li>
 							<span>学习目标：</span>
-							<p>新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村 新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村</p>
+							<p class="learningGoals"></p>
 						</li>
 						<li>
 							<span>使用教材：</span>
-							<p>新华网北京4月25日电 春风拂面，麦浪滚滚。4月25日，习近平总书记一行驱车来到安徽省滁州市凤阳县小岗村</p>
+							<p class="coursebook"></p>
 						</li>
 					</ul>
 				</div>
@@ -113,7 +192,7 @@
 					<ul>
 						<li>
 							<div>
-								<a href="###">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
 								<p>￥<span>1288</span></p>
 							</div>
 							<div>		
@@ -127,7 +206,7 @@
 						
 						<li>
 							<div>
-								<a href="###">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
 								<p>￥<span>1288</span></p>
 							</div>
 							<div>		
@@ -141,7 +220,7 @@
 						
 						<li>
 							<div>
-								<a href="###">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
 								<p>￥<span>1288</span></p>
 							</div>
 							<div>		
@@ -155,7 +234,7 @@
 						
 						<li>
 							<div>
-								<a href="###">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
 								<p>￥<span>1288</span></p>
 							</div>
 							<div>		
@@ -300,11 +379,11 @@
 				<p class="clearfix">
 					<span class="iconfont icon-huore offline_colorGreen"></span>
 					<span>热销课程</span>
-					<a href="###" class="offline_moreCourse">更多</a>
+					<a href="javascript:void(0)" class="offline_moreCourse">更多</a>
 				</p>
 				<ul>
 					<li>
-						<a href="###">
+						<a href="javascript:void(0)">
 							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
 							<div>
 								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
@@ -314,7 +393,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="###">
+						<a href="javascript:void(0)">
 							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
 							<div>
 								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
@@ -324,7 +403,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="###">
+						<a href="javascript:void(0)">
 							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
 							<div>
 								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
@@ -334,7 +413,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="###">
+						<a href="javascript:void(0)">
 							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
 							<div>
 								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
@@ -404,6 +483,135 @@
 				</div>
 			</div>
 		</div>
+		
+		
+		<footer id="footer">
+			<ul id="nav_footer" class="clearfix">
+				<li class="friend_link">
+					<span>友情链接</span>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li class="footer_more">
+					<a href="javascript:void(0)">更多>></a>
+				</li>
+			</ul>
+			<div id="footer_content" class="clearfix">
+				<ul>
+					<li class="footer_title">
+						<span>我们的实验室</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">在线编程</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">奖学制度</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">在线班级</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">课后60分钟考试</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>关于我们</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">精美吧简介</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">联系我们</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">加入我们</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>现有课程</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">ios</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">Android</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">unity3D</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">H5</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>帮助</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">联系客服</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">版权声明</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">法律声明</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">服务条款</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>反馈方式</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">电子邮箱: help@xxxxx.com</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">微信反馈:精英吧微信呢公众号</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="small_barcode"></a>
+					</li>
+				</ul>
+				<ul class="right_box">
+					<li class="footer_title">
+						<span>口袋精英APP</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="big_barcode"></a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">(扫码下载)</a>
+					</li>
+				</ul>
+			</div>
+			<h2 id="footer_bottom">蓝鸥科技有限公司©1997-2016 | 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</h2>
+		</footer>
 		<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
 		<script type="text/javascript" src="../js/offlineClass/offlineClass.js"></script>
 	</body>

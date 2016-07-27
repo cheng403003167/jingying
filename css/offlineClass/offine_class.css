@@ -126,6 +126,7 @@
 #offline_content .offline_class li {
   margin: 0 0 40px 20px;
   float: left;
+  width: 215px;
 }
 #offline_content .offline_class li .class_img {
   position: relative;
@@ -193,5 +194,40 @@
 #offline_content .offline_pages .active {
   color: #FFFFFF;
   background-color: #29b572;
+}
+.classTitle{
+	font-size: 1.5rem !important;
+	font-weight: bold;
+	color: #333 !important;
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis ;
+	white-space: nowrap;
+}
+.class_img img{
+	width: 215px;
+	height: 130px;
+}
+.classdes{
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis ;
+	white-space: nowrap;
+}
+.everypages{
+	display: inline-block;
+}
+.offline_content_title li a{
+	font-size: 1.4rem;
+	color: #000 !important;
+}
+.nav_classify li:nth-of-type(n+3) a{
+	color: #000;
+}
+.nav_pos li:nth-of-type(n+3) a{
+	color: #000;
+}
+#offline_content{
+	margin-bottom: 30px;
 }
 /*# sourceMappingURL=offine_class.css.map */

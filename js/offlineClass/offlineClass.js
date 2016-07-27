@@ -1,5 +1,28 @@
 $(function(){
-	
+	var $x = location.search;
+	var reg1 = /\?/g;
+	$x = $x.replace(reg1,'')
+	$.ajax({
+		type:"get",
+		url:"../PHP/offlineClass/classDetail.php",
+		dataType:"JSON",
+		data:{
+			t:$x
+		},
+		success:function(data){
+			console.log(data)
+			$('.offline_courseName').text(data[0].classType);
+			$(".type").text(data[0].type);
+			$(".classnum").text(data[0].classNum);
+			$(".classTime").text(data[0].classCycle);
+			$(".classPrice").text(data[0].classPrice);
+			$(".shoolAdress").text(data[0].shoolAddress);
+			$(".suitable").text(data[0].suitable);
+			$(".contentOfCourses").text(data[0].contentOfCourses);
+			$(".learningGoals").text(data[0].learningGoals);
+			$(".coursebook").text(data[0].coursebook);
+		}
+	});
 	//  课程详情，其他课程，用户评价  切换
 	$("#offline_list").on("click","li",function(){
 		$(this).addClass("offline_liBorderTop").siblings().removeClass("offline_liBorderTop");
