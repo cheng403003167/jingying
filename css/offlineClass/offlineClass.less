@@ -1,0 +1,885 @@
+@font16:16px;
+@font14:14px;
+@font22:22px;
+
+@color333: #333;
+@color666: #666;
+@color999: #999;
+@colorWhite: #fff;
+@colorGreen: #29b572;
+@colorOrange: #ea9b65;
+
+@bgColorWhite: #fff;
+
+
+img {
+    display: block;
+    width: 100%;
+}
+.offline_colorGreen {
+    color: @colorGreen;
+}
+
+// 评价星星 颜色
+.offline_starColor_orange {
+    color: #ffb200;
+}
+.offline_starColor_gray {
+    color: #999;
+}
+
+.offline_bodyBg {
+    background-color: #f5f5f5;
+}
+.offline_displayBlock {
+    display: block;
+}
+.offline_displayNone {
+    display: none;
+}
+
+#offline_header {
+    width: 1224px;
+    margin: 30px auto 0;
+    background-color: @bgColorWhite;
+    box-sizing: border-box;
+    padding: 30px;
+//  background-color: #e1e1e1;
+    >div {
+        float: left;
+    }
+    
+/************************* 头部左边的图片 *************************************/
+    .offline_picture {
+        width: 470px;
+        
+        .offline_logo {
+              height: 239px;
+        }
+        
+        .offline_logoList {
+            li {
+                float: left;
+                width: 110px;
+                height: 60px; 
+                margin-right: 10px;
+                margin-top: 10px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }   
+        }
+    }
+/************************* 头部左边的图片 end *************************************/ 
+    
+/*************************头部右边的简介**********************************/    
+    .offline_synopsis {
+        color: @color666;
+        margin-left: 30px;
+       .offline_courseName {
+            font-size: 24px;
+            margin-top: 11px;
+            margin-bottom: 27px;
+        }
+        .offline_block {
+            font-size: @font14;
+        }
+        .offline_frimSrc {
+            color: #6d9cdc;
+        }
+        >div {
+            width: 412px;
+            margin-top: 20px;
+            .offline_th {
+                background-color: #29b572;
+                 height: 55px;
+                 line-height: 55px;
+                p {
+                    &:first-child {
+                       height: 55px;
+                       float: left;
+                       color: @colorWhite;
+                        span {
+                            &:first-child {
+                                font-size: @font22;
+                                margin-left: 20px;
+                                margin-right: 16px; 
+                              }
+                             &:last-child {
+                                text-decoration: line-through;  
+                             }
+                          }
+                    }
+                    &:last-child {
+                        float: right;
+                        color: @colorWhite;
+                        span {
+                            display: inline-block;
+                            width: 60px;
+                            height: 26px;
+                            line-height: 26px;
+                            text-align: center;
+                            font-weight: bold;
+                            background-color: #fff;
+                            vertical-align: middle;
+                            margin-right: 20px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            
+            .offline_td {
+                 border-left: 1px solid #e8e8e8;
+                 border-bottom: 1px solid #e8e8e8;
+                 border-right: 1px solid #e8e8e8;
+                p {
+                    height: 33.3%;
+                    box-sizing: border-box;
+                    line-height: 46px;
+                    float: left;
+                    text-align: center;
+                    width: 136px;
+                    border-right: 1px solid #e8e8e8;
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+         >a {
+            display: inline-block;
+            width: 142px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-top: 26px;
+        }
+        .offline_promptlyBuy {
+            background-color: #ea9b65;
+            color: @colorWhite;  
+            margin-right: 15px;
+        } 
+        .offline_scheduleConsult {
+             color: @colorOrange;
+             border: 1px solid #ea9b65;
+        }
+    } 
+}
+
+
+.offline_detailBg {
+    width: 1224px;
+    margin: 30px auto;
+    
+    // （课程详情，其他课程，用户评价）选择栏
+    .offline_detailsList {  
+        width: 915px;
+        float: left;
+        background-color: @bgColorWhite;
+        #offline_list {
+            li {
+                width: 145px;
+                height: 70px;
+                line-height: 70px;
+                font-size: @font16;
+                text-align: center;
+                border-top: 5px solid rgba(1,1,1,0);
+                float: left;
+                &:hover {
+                    color: @colorGreen;
+                }
+            }
+            .offline_liBorderTop {
+                border-top-color: #29b572;
+                color: #29b572;
+            }
+        }
+        
+        //  课程详情
+        #offline_courseDetails {
+            ul {
+                color: @color333;
+                font-size: @font14;
+                padding: 0 30px;
+                box-sizing: border-box;
+                &:last-child {
+                    padding-bottom: 65px;
+                    margin-top: 23px;
+                }
+                li {
+                    margin: 8px 0;
+                    line-height: 26px;
+                    zoom:1;
+                    &:after {
+                        display:block;
+                        overflow:hidden; 
+                        clear:both; 
+                        height:0; 
+                        visibility:hidden; 
+                        content:".";
+                    }
+                   span {
+                       width: 80px;
+                       float: left;
+                       margin-right:15px;
+                       color: @color999; 
+                    }
+                   p {
+                        width: 760px;
+                        float: left; 
+                    }
+                }
+                &:first-child {
+                    li {
+                        &:last-child {
+                            p {
+                                padding-bottom: 23px;
+                                border-bottom: 1px solid #E8E8E8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        //  其他课程
+        #offline_elseCourse {
+            ul {
+               color: @color999;
+               padding: 0 30px;
+               padding-bottom: 58px;
+               box-sizing: border-box;
+               li{
+                   border-bottom: 1px solid #E8E8E8;
+                   padding-bottom: 22px;
+                   &:last-child {
+                       border-bottom: none;
+                   }
+                   div {
+                       zoom: 1;
+                       
+                       &:after {
+                          display:block;
+                          overflow:hidden; 
+                          clear:both; 
+                          height:0; 
+                          visibility:hidden; 
+                          content:".";
+                       }
+                       
+                       &:first-child {
+                            font-size: @font16;
+                            margin-top: 21px;
+                            margin-bottom: 5px;
+                           a {
+                               color: @color666;
+                               float: left;
+                               &:hover {
+                                   color: @colorGreen;
+                               }
+                            } 
+                             
+                          p {
+                               color: @colorOrange;
+                               float: right;
+                               span {
+                                   font-weight: bold;
+                               }
+                           }
+                       }
+                       
+                       &:last-child {
+                           font-size: @font14;
+//                        margin-bottom: 22px;
+                           >span {
+                               float: left;
+                               margin-right: 30px;
+                           }
+                           >p {
+                               float: left;
+                               margin-left: 40px;
+                               &:last-child {
+                                    float: right;
+                                    span {
+                                        color: @color999;
+                                        text-decoration: line-through;
+                                        font-weight: 100;
+                                    }
+                               }
+                               span {
+                                   color: @colorGreen;
+                               }
+                           }
+                           
+                       }
+                    
+                   }  /* div end*/
+                 } /* li end */
+             }  /* ul end */  
+        }
+        
+        #offline_userAppraise {
+           
+           //  评价图标区
+            .offline_commentPicture {
+                width: 855px;
+                height: 170px; 
+                margin: 0 auto;
+                border-bottom: 1px solid #e8e8e8;
+                > div {
+                    float: left;
+                    
+                    &:first-child {
+                        margin-top: 28px; 
+                        margin-left: 200px;
+                        text-align: center;   
+                         .offline_commentScore {
+                               color: #ff5000;
+                               font-size: 28px;
+                               
+                               margin-bottom: 3px;
+                           }
+                           .offline_stars {
+                               display: inline-block;
+                               font-size: 18px;
+                               margin-bottom: 8px;
+                               span {
+                                   float: left;
+                                   margin: 0 4px;
+                               }
+                           }
+                        
+                        p {
+                             &:last-child {
+                                 font-size: @font14;
+                                 color: @color666;
+                             }
+                        }
+                       
+                    }
+                    
+                    &:last-child {
+                        border-left: 1px solid #e8e8e8;
+                        padding-left: 55px;
+                        margin-left: 55px;
+                        margin-top: 47px;
+                        color: @color666;
+                        div {
+                            line-height: 14px;
+                            p {
+                                float: left;
+                            
+                            }
+                            .offline_line {
+                                position: relative;
+                                margin: 0 10px;
+                                width: 140px;
+                                height: 14px;
+                                background-color: #f5f5f5;
+                                span {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    height: 100%;
+                                    width: 20px;
+                                    background-color: #ffb200;
+                                }
+                            }
+                        }
+                        .offline_middleComment {
+                            margin: 15px 0;
+                        }
+                        
+                    }
+                }
+            }
+            
+            //  印象区域
+            .offline_impression {
+                font-size: @font14;
+                padding: 0 30px;
+                margin-top: 54px;
+                >span {
+                    width: 70px;
+                    color: @color999;
+                    float: left;
+                    padding-top: 6px;
+                }
+                
+                >ul {
+                    float: left;
+                    
+                    li {
+                        float: left;
+                        color: #3faf7a;
+                        padding: 5px;
+                        border: 1px solid #3faf7a;
+                        margin: 0 6px 15px;
+                    }
+                } 
+            }
+            
+            //  评论区域
+            .offline_commentArea {  
+                padding: 0 30px;
+                margin-top: 46px;
+                >div {
+                    &:first-child {  //  name评论内容
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: @font14;
+                        color: @color333;
+                        padding: 0 20px;
+                        border: 1px solid #e8e8e8;
+                        background-color: #fafafa;
+                    }
+                    &:last-child {  //  页数
+                        text-align: center;
+                        padding: 0 20px;
+                        margin-bottom: 60px;          
+                        border: 1px solid #e8e8e8;
+                        border-top: none;
+                        ul {
+                            margin-top: 35px;
+                            margin-bottom: 40px;
+                            color: @color666;
+                            display: inline-block;
+                            li {
+                                float: left;
+                                font-size: @font16;
+                                padding: 4px 12px;
+                                border: 1px solid #e8e8e8;
+                                margin: 0 2px;  
+                            }
+                            .offline_pageNumber {
+                                &:hover {
+                                    color: #fff;
+                                    background-color: #29b572;
+                                    border-color: #29b572;
+                                }
+                            } 
+                            .offline_pageCheck {
+                                 color: #fff;
+                                 background-color: #29b572;
+                                 border-color: #29b572;
+                            }
+                            .offline_omit {
+                                border-color: rgba(1,1,1,0);
+                                padding: 0;
+                            }
+                        }
+                    } 
+                }
+                
+                //  评论内容区
+                >ul {
+                    padding: 0 20px;
+                    border-left: 1px solid #e8e8e8;
+                    border-right: 1px solid #e8e8e8;
+                    li {
+                        overflow: hidden;
+                        border-bottom: 1px solid #e8e8e8;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        
+                        >div {
+                            font-size: 12px;
+                            margin-bottom: 12px;
+                            margin-top: 28px;
+                            color: @color999;
+                            
+                            zoom: 1;
+                            &:after {
+                                display:block;
+                                overflow:hidden; 
+                                clear:both; 
+                                height:0; 
+                                visibility:hidden; 
+                                content:".";
+                            }
+                            span {
+                                width: 9px;
+                                height: 9px;
+                                float: left;
+                                margin-right: 4px;
+                                margin-top: 1.5px;
+                                background-image: url(../../img/15ico_bg.png);
+                                background-repeat: no-repeat;
+                                background-position: center -703px;
+                            }
+                            p {
+                                line-height: 12px;
+                                float: left;  
+
+                                &:last-child {
+                                    float: right;
+                                }
+                            }
+                            .offline_starsOrange {
+                               
+                                background-image: url(../../img/15ico_bg.png);
+                                background-repeat: no-repeat;
+                                background-position: center -721px;
+                            }
+                        }
+                        .offline_commentText {
+                            font-size: @font14;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }  /* #offline_userAppraise end */
+    }
+    
+    
+    
+/******************************** 热销课程 *******************************/ 
+    .offline_courseRight { 
+        float: right;
+        width: 295px;
+        .offline_hotCourse {
+            width: 100%;
+            padding: 0 6px;
+            box-sizing: border-box;
+            background-color: @bgColorWhite;
+            
+            >p {
+                height: 70px;
+                line-height: 70px;
+                margin-left: 9px;
+                
+                span {
+                    font-size: 16px;
+                    
+                    &:last-child {
+                         color: @color333;
+                    }
+                }
+                
+                .offline_moreCourse {
+                     float: right;
+                     color: @color666;
+                     &:hover {
+                         text-decoration: underline;
+                     }
+                 }  
+            }
+            ul {
+                margin-bottom: 26px;
+                padding-bottom: 30px;
+                li {
+                     padding: 9px;
+                     line-height: 26px;
+                     color: @color333;    
+                     border: 1px solid rgba(1,1,1,0);
+                     
+                    a {
+                        display: block;
+                        zoom: 1;
+                     
+                         &:after {
+                            display:block;
+                            overflow:hidden; 
+                            clear:both; 
+                            height:0; 
+                            visibility:hidden; 
+                            content:".";
+                        }
+                    }
+                    
+                    &:hover {
+                        border-color: #E8E8E8;
+                        .offline_courseTitle {
+                           color: @colorGreen;
+                        }
+                    }
+                   
+                    div {
+                        float: left;
+                        
+                        &:first-child {
+                            width: 110px;
+                            height: 60px;
+                            margin-right: 10px;
+                        }
+                        
+                        &:last-child {
+                            height: 60px;
+                            width: 140px;
+                            
+                            p {
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            .offline_courseTitle {
+                                font-size: 14px;
+                                line-height: 14px;
+                            }
+                            .offline_site {
+                                color: @color999;
+                                line-height: 23px;
+                                margin-top: 2px;  
+                            }
+                         
+                            span {
+                                font-size: @font16;
+                                line-height: 16px;
+                                color: @colorOrange;
+                                
+                            }
+                        }
+                    }  /* div end */                      
+                }  /* li end */                  
+            }   /* ul end */       
+        }  /* .offline_hotCourse end */
+    /**************************** .offline_question ************************************/
+        .offline_question {
+            width: 100%;
+            padding: 0 15px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-color: @bgColorWhite;
+            >p {
+                height: 26px;
+                line-height: 26px;
+                margin-top: 25px;
+                margin-bottom: 20px; 
+                
+                span {
+                    &:first-child {
+                        font-size: 20px;
+                        color: @colorGreen;
+                        vertical-align: middle;
+                    }
+                    
+                    &:last-child {
+                        font-size: @font16;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            
+            ul {
+                padding-bottom: 20px;
+               li {
+                   zoom: 1;
+                   
+                   &:after {
+                       display:block;
+                       overflow:hidden; 
+                       clear:both; 
+                       height:0; 
+                       visibility:hidden; 
+                       content:".";
+                    }
+                   
+                   span {
+                       width: 30px;
+                       float: left;
+                   }
+                   p {
+                       width: 235px; 
+                       float: left;
+                   }
+                   &:nth-of-type(2n+1) {
+                       font-size: @font14;
+                       margin-bottom: 7px;
+                       span {
+                           color: @colorOrange;
+                       }
+                       p {
+                           color: @color333;
+                       }
+                   } 
+                   &:nth-of-type(2n) {
+                       margin-bottom: 20px;
+                       span {
+                           font-size: @font14;
+                           line-height: 14px;
+                           color: @colorGreen;
+                       }
+                       p {
+                           color: @color666;
+                       }
+                   }
+               }
+           }  /* ul end */
+        }
+    } 
+}
+
+//  弹窗蒙层
+.offline_mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    >div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -155px;
+        margin-left: -245px;
+        background-color: #fff;
+        width: 490px;
+        height: 310px;
+        border-radius: 5px;
+        >div {
+            &:first-child {
+                height: 32px;
+                line-height: 32px;
+                font-size: @font14;
+                color:#fff;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background-color: #29b572;
+                padding: 0 15px;
+                p {
+                    float: left;
+                }
+                a {
+                    width: 18px;
+                    height: 18px;
+                    margin-top: 7px;
+                    float: right;
+                    background-image: url(../../img/15ico_bg.png);
+                    background-repeat: no-repeat;
+                    background-position: right -266px; 
+                }
+            }
+            
+            &:last-child {
+                text-align: right;
+                padding-right: 10px;
+                margin-top: 35px;
+                margin-bottom: 20px;
+                a {
+                    display: inline-block;
+                    width: 100px;
+                    height: 38px;
+                    line-height: 38px;
+                    font-size: @font14;
+                    text-align: center;
+                    margin-right: 10px; 
+                    border-radius: 3px;
+                    &:first-child {
+                        background-color: #29b572;
+                        color: #fff;
+                    }
+                    &:last-child {
+                        background-color: #f5f5f5;
+                        color: @color333;
+                        box-sizing: border-box;
+                        border: 1px solid #e8e8e8;
+                    }
+                }
+                
+            }
+        }
+    }
+    .offline_writeDatum {
+        margin-left: 36px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+        .offline_TIPS {
+            display: none;
+            font-size: 12px;
+            float: left;
+            height: 28px;
+            line-height: 28px;
+            margin-left: 5px;
+            text-indent: 20px;
+            background-image: url(../../img/15ico_bg.png);
+            background-repeat: no-repeat;
+            background-position: 0 -139px;
+        }
+        >p {
+            color: @color999;
+            margin-bottom: 20px;
+        }
+        >div {
+            font-size: @font14;
+            color: @color666;
+            margin-bottom: 14px;
+            >span {
+                height: 28px;
+                line-height: 28px;
+                float: left;
+            }
+            input {
+                float: left;
+                width: 230px;
+                height: 28px;
+                font-size: @font14;
+                color: @color333;
+                border: 1px solid #e8e8e8;
+                box-sizing: border-box;
+                padding: 0 10px;
+            }
+        }
+        .offline_likeCourse {
+            position: relative;
+           
+          
+            #offline_courseImpression {            
+                width: 230px;
+                height: 28px;
+                line-height: 28px;
+                float: left;
+                font-size: @font14;
+                color: @color333;
+                border: 1px solid #e8e8e8;
+                box-sizing: border-box;
+                padding: 0 10px;
+                
+            }
+            .offline_topArrow {
+                background-image: url(../../img/15ico_bg.png);
+                background-repeat: no-repeat;
+                background-position: 207px -565px;
+            }
+            .offline_bottomArrow {
+                background-position: 207px -582px;
+            }
+            ul {
+                display: none;
+                position: absolute;
+                top: 28px;
+                left: 70px;
+                width: 230px;
+                background-color: #fff;
+                box-sizing: border-box;
+                border: 1px solid #e8e8e8;
+                border-top: none;
+                li {
+                    width: 100%;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: @font14;
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                   &:hover {
+                       background: #fafafa;
+                   }
+                }
+            }
+        }
+    }
+}
+
+
+
+
