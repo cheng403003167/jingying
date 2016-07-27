@@ -1,0 +1,347 @@
+@font16:16px;
+@font14:14px;
+@font22:22px;
+
+@color333: #333;
+@color666: #666;
+@color999: #999;
+@colorWhite: #fff;
+@colorGreen: #29b572;
+@colorOrange: #ea9b65;
+
+@bgColorWhite: #fff;
+
+
+img {
+    display: block;
+    width: 100%;
+}
+.school_colorGreen {
+    color: @colorGreen;
+}
+
+// 评价星星 颜色
+.offline_starColor_orange {
+    color: #ffb200;
+}
+.offline_starColor_gray {
+    color: #999;
+}
+
+.school_bodyBg {
+    background-color: #f5f5f5;
+}
+.offline_displayBlock {
+    display: block;
+}
+.offline_displayNone {
+    display: none;
+}
+
+.school_body {
+    width: 1224px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.school_header {
+    width: 1224px;
+    height: 105px;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    ul {
+        li {
+            width: 60px;
+            margin: 0 10px;
+            padding: 0 2px;
+            font-size: @font14;
+            text-align: center;
+            float: left;
+            &:first-child {
+                width: 65px;
+                text-align: right;
+                background-image: url(../../img/15ico_bg.png);
+                background-repeat: no-repeat;
+            }
+            
+        }
+        &:first-child {
+            margin-bottom: 18px;
+        }
+        .school_class {
+             background-position: 0 -798px;  
+        }
+        .school_area {
+             background-position: 0 -823px; 
+        }
+        .school_option {
+            &:hover {
+                color: @colorGreen;
+            }
+        }
+    }
+}
+
+.school_detailBg {
+    width: 1224px;
+    margin: 30px auto;
+    .school_detailsList {  
+        width: 915px;
+        padding: 0 10px 40px;
+        box-sizing: border-box;
+        float: left;
+        background-color: @bgColorWhite;
+
+        #school_list {
+            li {
+                width: 145px;
+                height: 70px;
+                line-height: 70px;
+                font-size: @font16;
+                text-align: center;
+                border-top: 5px solid rgba(1,1,1,0);
+                float: left;
+                &:hover {
+                    color: @colorGreen;
+                    .school_good {
+                         background-position: 0 -865px;
+                    }
+                }
+            }
+            .school_good {
+                display: inline-block;
+                width: 20px;
+                height: 15px;
+                background-image: url(../../img/15ico_bg.png);
+                background-repeat: no-repeat;
+                background-position: 0 -847px;
+            }
+            .school_liBorderTop {
+                border-top-color: #29b572;
+                color: #29b572;
+            }
+        }
+    } 
+    .school_lists {
+        width: 895px;
+        li {
+             a {
+                display: block;
+                color: @color333;
+                padding: 15px 10px;
+                box-sizing: border-box;
+                border: 1px solid rgba(1,1,1,0);
+                zoom:1;
+                &:after {
+                    display:block;
+                    overflow:hidden; 
+                    clear:both; 
+                    height:0; 
+                    visibility:hidden; 
+                    content:".";
+                }
+                &:hover {
+                    border-color: #e8e8e8;
+                    h3 {
+                        color: @colorGreen;
+                    }
+                }
+                
+                >div {
+                    float: left; 
+                    &:first-child {
+                        width: 163px;
+                        height: 90px;
+                        margin-right: 20px;
+                    }
+                    &:last-child {
+                        div {
+                            &:first-child {  
+                                zoom:1;
+                                &:after {
+                                    display:block;
+                                    overflow:hidden; 
+                                    clear:both; 
+                                    height:0; 
+                                    visibility:hidden; 
+                                    content:".";
+                                }
+                                h3 {
+                                    float: left;
+                                    font-size: 18px;
+                                    line-height: 18px;
+                                    font-weight: bold;
+                                    margin-right: 10px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    color: @color666;
+                                }
+                            }
+                        }
+                        >p {
+                             font-size: @font14;  
+                             color: @color999;
+                             text-indent: 20px; 
+                             background-image: url(../../img/15ico_bg.png);
+                             background-repeat: no-repeat;
+                             background-position: 0 -626px;
+                        }
+                        .school_stars {
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                            p {
+                                height: 14px;
+                                line-height: 14px;
+                                float: left;
+                                margin-right: 10px;
+                                font-size: 12px;
+                                &:last-child {
+                                    color: @color999;
+                                    span {
+                                        color: @colorGreen;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    .school_pageBg {
+        text-align: center;
+        padding: 0 20px;     
+        ul {
+            margin-top: 45px;
+            color: @color666;
+            display: inline-block;
+            li {
+                float: left;
+                font-size: @font16;
+                padding: 4px 12px;
+                border: 1px solid #e8e8e8;
+                margin: 0 2px;  
+            }
+            .school_pageNumber {
+                &:hover {
+                    color: #fff;
+                    background-color: #29b572;
+                    border-color: #29b572;
+                }
+            } 
+            .school_pageCheck {
+                 color: #fff;
+                 background-color: #29b572;
+                 border-color: #29b572;
+            }
+            .school_omit {
+                border-color: rgba(1,1,1,0);
+                padding: 0;
+            }
+        } 
+    } 
+}
+
+.school_courseRight { 
+    float: right;
+    width: 295px;
+    .school_hotCourse {
+        width: 100%;
+        padding: 0 6px;
+        box-sizing: border-box;
+        background-color: @bgColorWhite;
+        
+        >p {
+            height: 70px;
+            line-height: 70px;
+            margin-left: 9px;
+            
+            span {
+                font-size: 16px;
+                
+                &:last-child {
+                     color: @color333;
+                }
+            }
+            
+            .school_moreCourse {
+                 float: right;
+                 color: @color666;
+                 &:hover {
+                     text-decoration: underline;
+                 }
+             }  
+        }
+        ul {
+            margin-bottom: 26px;
+            padding-bottom: 30px;
+            li {
+                 padding: 9px;
+                 line-height: 26px;
+                 color: @color333;    
+                 border: 1px solid rgba(1,1,1,0);
+                 
+                a {
+                    display: block;
+                    color: @color666;
+                    zoom: 1;
+                    
+                     &:after {
+                        display:block;
+                        overflow:hidden; 
+                        clear:both; 
+                        height:0; 
+                        visibility:hidden; 
+                        content:".";
+                    }
+                }
+                
+                &:hover {
+                    border-color: #E8E8E8;
+                    .school_courseTitle {
+                       color: @colorGreen;
+                    }
+                }
+               
+                div {
+                    float: left;
+                    
+                    &:first-child {
+                        width: 110px;
+                        height: 60px;
+                        margin-right: 10px;
+                    }
+                    
+                    &:last-child {
+                        height: 60px;
+                        width: 140px;
+                        
+                        p {
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        .school_courseTitle {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                        .school_site {
+                            color: @color999;
+                            line-height: 23px;
+                            margin-top: 2px;  
+                        }
+                     
+                        span {
+                            font-size: @font16;
+                            line-height: 16px;
+                            color: @colorOrange;  
+                        }
+                    }
+                }  /* div end */                      
+            }  /* li end */                  
+        }   /* ul end */       
+    }  /* .offline_hotCourse end */
+ }  

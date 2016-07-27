@@ -345,11 +345,11 @@ $(function() {
 	/*---------- section部分选中效果----------*/
 	
 	/*---------- 表单数据判断 ----------*/
-	var _value1 = $(".first input").val().trim();
+	var _value1 = $.trim($(".first input").val());
 	var _value2 = $('.second input').val().trim();
 	var _value3 = $('.third input').val().trim();
 	$('.first input').on("blur", function() {
-		_value1 = $(".first input").val().trim();
+		_value1 = $.trim($(".first input").val());
 		if (_value1 == "") {
 			$('.firstTips div').show();
 		}
