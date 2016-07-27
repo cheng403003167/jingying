@@ -1,0 +1,235 @@
+nav,footer{
+	width: 100%;
+	height: 100px;
+}
+a{
+	color: #848585;
+}
+#wraper{
+	width: 100%;
+	height: 600px;
+	background: url(../../img/regsiter_bg.png) center no-repeat;
+	background-size: 1920px 600px;
+}
+.conn{
+	width: 1224px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+.list{
+	width: 320px;
+	display: inline-block;
+	position: absolute;
+	top: 10%;
+	right: 0;
+}
+.tap{
+	border-bottom: 1px solid #cfcfcf;
+	height: 50px;
+	background-color: #fff;
+}
+.col1{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 50px;
+	color: #000000;
+	position: relative;
+}
+.bottomLine{
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #29b572;
+	display: none;
+}
+.col1:hover .bottomLine{
+	display: block;
+}
+.col1:hover{
+	font-size: 1.7rem;
+	color: #29b572;
+}
+.lineShow{
+	display: block;
+}
+.fontSize{
+	font-size: 1.7rem;
+	color: #29b572;
+}
+.logon{
+	display: none;
+}
+.denglu,.logon{
+	width: 100%;
+	padding: 28px 0;
+	background-color: rgba(255,255,255,0.9);
+	
+}
+.inputList{
+	width: 260px;
+	margin: auto;
+	text-align: left;
+}
+.phonenum{
+	width: 100%;
+	display: inline-block;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+.vermid:after{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.vermid,.code{
+	margin: 8px 0;
+}
+.input{
+	width: 78%;
+	height: 20px;
+	font-size: 1.4rem;
+	border: 0;
+	margin-left: 8px;
+	padding-left: 10px;
+	vertical-align: middle;
+	border-left: 1px solid #ccc;
+	background-color: rgba(0,0,0,0);
+}
+.minbg{
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../../img/login-2.png) center no-repeat;
+	background-size: 400%;
+	margin-left: 10px;
+}
+.minbg1{
+	background-position-x: -8%;
+}
+.minbg2{
+	background-position-x: 35%;
+}
+.codetext{
+	width: 160px;
+	height: 40px;
+	display: inline-block;
+	border: 1px solid #ccc;
+}
+.input2{
+	width: 64%;
+}
+.minbg3{
+	background-position-x: 68%;
+}
+.minbg4{
+	background-position-x: 100%;
+}
+.code{
+	width: 90px;
+	height: 40px;
+}
+.codebtn{
+	width: 90px;
+	height: 30px;
+	font-size: 1.4rem;
+	color: #29B572;
+	line-height: 30px;
+	margin-top: 13px;
+	display: block;
+	text-align: center;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.bt2{
+	display: none;
+	color: #ccc;
+}
+.codebtn:hover{
+	border-color: #29B572;
+	background: -webkit-linear-gradient(#fff,#ccc);
+}
+.floatRight{
+	float: right;
+}
+.listMtop{
+	margin-top: 15px;
+}
+.warn{
+	color: red;
+	font-size: 1.2rem;
+	text-indent: 1.5rem;
+	background: url(../../img/warning.png) left center no-repeat;
+	background-size: 6%;
+	display: none;
+}
+label{
+	color: #848585;
+	display: block;
+	margin-top: 12px;
+	margin-bottom: 3px;
+}
+.cl{
+	font-size: 1.2rem;
+	margin-right: 5px;
+	-webkit-appearance: checkbox;
+}
+.up{
+	font-size: 1.6rem;
+	text-align: center;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	background-color: #29b572;
+	color: #fff;
+	margin-top: 7px;
+}
+.otheruser{
+	margin-top: 30px;
+}
+.otheruser .qui span{
+	display: inline-block;
+	text-align: center;
+	float: left;
+}
+.line{
+	width:25%;
+	height: 1px;
+	margin-top: 0.8rem;
+	background-color: #ccc;
+}
+.centerText{
+	width: 50%;
+	font-size: 1.4rem;
+	color: #848585;
+}
+.lianjie{
+	margin-top: 20px;
+	height: 30px;
+	text-align: center;
+}
+.other{
+	width: 30px;
+	height: 100%;
+	display: inline-block;
+	margin: 0 13px;
+	background: url(../../img/coopuser.png) no-repeat;
+	background-size: 300%;
+}
+.qq{
+	background-position-x: left;
+}
+.sina{
+	background-position-x: -30px;
+}
+.weixin{
+	background-position-x: -60px;
+}
