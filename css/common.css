@@ -1,0 +1,188 @@
+/**************** 头部导航条 begin ****************/
+#header {
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+#header a:hover {
+  color: #29b572;
+}
+#header #nav_head {
+  width: 1224px;
+  height: 90px;
+  margin: 0 auto;
+}
+#header #nav_head ul {
+  height: 100%;
+}
+#header #nav_head ul li {
+  float: left;
+  height: 100%;
+  margin-left: 50px;
+  line-height: 90px;
+  font-size: 1.6rem;
+}
+#header #nav_head ul .logo {
+  margin: 0 18px 0 0;
+}
+#header #nav_head ul .logo img {
+  margin-top: 23px;
+}
+#header #nav_head ul .choose_city {
+  position: relative;
+  width: 64px;
+  line-height: 26px;
+  margin-left: 0;
+}
+#header #nav_head ul .choose_city:hover .city_pop {
+  display: block;
+}
+#header #nav_head ul .choose_city:hover p {
+  border-bottom-color: #fff;
+}
+#header #nav_head ul .choose_city p {
+  position: absolute;
+  left: 0;
+  top: 31px;
+  display: block;
+  width: 50px;
+  height: 26px;
+  padding-left: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 1px;
+  font-size: 1.4rem;
+  z-index: 2;
+}
+#header #nav_head ul .choose_city p:before {
+  content: "";
+  float: right;
+  width: 10px;
+  height: 6px;
+  margin: 10px 10px 0 0;
+  background: url("../img/icon_down.png");
+  background-size: 100% 100%;
+}
+#header #nav_head ul .choose_city ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 58px;
+  width: 330px;
+  height: 226px;
+  border: 1px solid #e0e0e0;
+  padding: 4px 4px 0 4px;
+  z-index: 1;
+  background-color: #fff;
+}
+#header #nav_head ul .choose_city ul li {
+  width: 33.33%;
+  height: 52px;
+  float: left;
+  margin: 20px 0 0 0;
+  line-height: 28px;
+}
+#header #nav_head ul .choose_city ul li a {
+  display: block;
+  width: 78px;
+  height: 52px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#header #nav_head ul .choose_city ul li img {
+  display: block;
+  width: 100%;
+}
+#header #nav_head ul .nav_right_bar {
+  float: right;
+}
+#header #nav_head ul .nav_right_bar div {
+  width: 82px;
+  text-align: right;
+}
+#header #nav_head ul .nav_right_bar div a {
+  font-size: 1.4rem;
+}
+#header #nav_head ul .nav_right_bar div .register_bar {
+  border-left: 1px solid #666;
+}
+/**************** 头部导航条 end ****************/
+/**************** 尾部 begin ****************/
+#footer {
+  height: 373px;
+  background-color: #fff;
+  font-size: 1.2rem;
+  margin-top: 30px;
+} /**************** 尾部 end ****************/
+#footer #nav_footer {
+  width: 1224px;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+#footer #nav_footer .friend_link {
+  font-size: 1.6rem;
+  color: #333;
+  margin-right: 20px;
+}
+#footer #nav_footer li {
+  float: left;
+  width: 98px;
+  height: 60px;
+  line-height: 60px;
+}
+#footer #nav_footer li a {
+  color: #666;
+}
+#footer #nav_footer .footer_more {
+  float: right;
+  width: auto;
+}
+#footer #footer_content {
+  width: 1224px;
+  margin: 0 auto;
+}
+#footer #footer_content ul {
+  float: left;
+  width: 170px;
+}
+#footer #footer_content ul li a {
+  color: #666;
+}
+#footer #footer_content ul li .small_barcode {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: -4px;/* 二维码图的精确性 **/
+  background: url("../img/2d_barcode.png");
+  background-size: 100% 100%;
+}
+#footer #footer_content ul li .big_barcode {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: url("../img/2d_barcode.png");
+  background-size: 100% 100%;
+}
+#footer #footer_content ul .footer_title {
+  line-height: 78px;
+}
+#footer #footer_content ul .footer_title a {
+  color: #333;
+}
+#footer #footer_content .right_box {
+  width: 120px;
+  float: right;
+}
+#footer #footer_content .right_box li {
+  text-align: center;
+}
+#footer #footer_bottom {
+  border-top: 1px solid #f5f5f5;
+  height: 70px;
+  line-height: 70px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+/*# sourceMappingURL=common.css.map */

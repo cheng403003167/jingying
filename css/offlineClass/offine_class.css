@@ -1,0 +1,197 @@
+/**************** 导航 begin ****************/
+#nav {
+  height: 104px;
+  width: 1204px;
+  padding-left: 20px;
+  margin: 30px auto;
+  background-color: #fff;
+}
+#nav ul {
+  height: 52px;
+  font-size: 1.4rem;
+  color: #333;
+}
+#nav ul li {
+  float: left;
+  line-height: 52px;
+}
+#nav ul li p {
+  width: 80px;
+}
+#nav ul li span {
+  color: #29b572;
+}
+#nav ul li a {
+  margin-left: 46px;
+}
+#nav ul li a:hover {
+  color: #29b572;
+}
+#nav ul .nav_classify_first p:before {
+  position: relative;
+  bottom: 2px;
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url("../../img/offline_classify.png");
+}
+#nav .nav_pos .nav_pos_first p:before {
+  position: relative;
+  bottom: 2px;
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url("../../img/offline_pos.png");
+}
+/**************** 导航 end ****************/
+/**************** 列表详情 begin ****************/
+#offline_content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 40px 0;
+  background-color: #fff;
+} /**************** 列表详情 end ****************/
+#offline_content .offline_content_title {
+  height: 66px;
+}
+#offline_content .offline_content_title li {
+  position: relative;
+  width: 110px;
+  float: left;
+  text-align: center;
+}
+#offline_content .offline_content_title li a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+#offline_content .offline_content_title li div {
+  position: absolute;
+  top: 20px;
+  left: 67px;
+  width: 10px;
+  height: 10px;
+}
+#offline_content .offline_content_title .class_num {
+  height: 100%;
+  float: right;
+  line-height: 66px;
+  color: #666;
+  font-size: 1.4rem;
+}
+#offline_content .offline_content_title .sales div {
+  background: url("../../img/icon_bg.png") no-repeat;
+  background-position: -2px -850px;
+}
+#offline_content .offline_content_title .sales.active div {
+  background-position: -2px -868px;
+}
+#offline_content .offline_content_title .prices div {
+  background: url("../../img/icon_bg.png");
+  background-position: -2px -885px;
+}
+#offline_content .offline_content_title .prices.active div {
+  background-position: -2px -897px;
+}
+#offline_content .offline_content_title .access div {
+  background: url("../../img/icon_bg.png");
+  background-position: -2px -850px;
+}
+#offline_content .offline_content_title .access.active div {
+  background-position: -2px -868px;
+}
+#offline_content .offline_content_title .active {
+  color: #29b572;
+}
+#offline_content .offline_content_title .active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #29b572;
+}
+#offline_content .offline_class {
+  height: 735px;
+}
+#offline_content .offline_class li {
+  margin: 0 0 40px 20px;
+  float: left;
+}
+#offline_content .offline_class li .class_img {
+  position: relative;
+}
+#offline_content .offline_class li .class_img span {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  background-color: #333;
+}
+#offline_content .offline_class li h2 {
+  color: #333;
+  font-size: 1.5rem;
+}
+#offline_content .offline_class li p {
+  color: #666;
+  font-size: 1.2rem;
+}
+#offline_content .offline_class li h3 span {
+  color: #edaa80;
+  font-size: 2.2rem;
+}
+#offline_content .offline_class li h3 .mm {
+  font-size: 1.4rem;
+}
+#offline_content .offline_class li h3 .sales_num {
+  color: #666;
+  font-size: 1.4rem;
+  margin-left: 45px;
+}
+#offline_content .offline_class li h3 del {
+  color: #666;
+}
+#offline_content .offline_pages {
+  text-align: center;
+}
+#offline_content .offline_pages span {
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dbdbdb;
+  margin-left: 5px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+}
+#offline_content .offline_pages p {
+  display: inline-block;
+  line-height: 30px;
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+#offline_content .offline_pages .previous {
+  width: 60px;
+  height: 30px;
+}
+#offline_content .offline_pages .next {
+  width: 60px;
+  height: 30px;
+  margin-left: 5px;
+}
+#offline_content .offline_pages .active {
+  color: #FFFFFF;
+  background-color: #29b572;
+}
+/*# sourceMappingURL=offine_class.css.map */
