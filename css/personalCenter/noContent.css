@@ -1,6 +1,7 @@
 #content {
   width: 1224px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 #content #status {
   background-color: #fff;

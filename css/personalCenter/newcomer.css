@@ -1,6 +1,7 @@
 #content .box {
   width: 1224px;
   margin: 0 auto;
+  margin-top: 30px;
 }
 #content .box .sideBar {
   float: left;
