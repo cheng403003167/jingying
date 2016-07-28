@@ -30,13 +30,13 @@
   border-radius: 50%;
 }
 #content #status .sideBar h3 {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
   font-weight: bold;
   margin-bottom: 10px;
 }
 #content #status .sideBar p {
-  font-size: 1.2rem;
+  font-size: 12px;
   color: #666;
 }
 #content #status .sideBar p span {
@@ -49,7 +49,7 @@
   float: left;
 }
 #content #status .right h3 {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #999;
   margin-left: 22px;
   margin-top: 25px;
@@ -61,11 +61,11 @@
 }
 #content #status .right .details li a {
   color: #333;
-  font-size: 1.4rem;
+  font-size: 14px;
   margin-left: 30px;
 }
 #content #status .right .details li p {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
   position: absolute;
   top: 0;
@@ -101,7 +101,7 @@
   height: 48px;
 }
 #content #box .left ul li p {
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 48px;
   color: #333;
   padding-left: 18px;
@@ -135,7 +135,7 @@
 }
 #content #box .right .myLearningCurve .top ul li p {
   padding: 20px 0;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #333;
   text-align: center;
 }
@@ -175,7 +175,7 @@
   width: 100%;
   height: 100%;
   line-height: 53px;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #333;
   text-align: center;
 }
@@ -195,7 +195,7 @@
 #content #box .right .myLearningCurve .bottom .details .subject1Details {
   min-height: 375px;
   padding: 3px;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #999;
   outline: none;
   word-break: break-word;
@@ -205,7 +205,7 @@
 }
 #content #box .right .myLearningCurve .bottom .details .wordBox {
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #999;
   text-align: center;
   position: absolute;
@@ -241,7 +241,7 @@
   width: 100%;
   height: 100%;
   line-height: 53px;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #333;
   text-align: center;
 }
@@ -279,7 +279,7 @@
   width: 100%;
   height: 100%;
   line-height: 53px;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #333;
   text-align: center;
 }
@@ -299,7 +299,7 @@
 #content #box .right .myClass .bottom .details .subject1Details {
   min-height: 375px;
   padding: 3px;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #999;
   outline: none;
   word-break: break-word;
@@ -309,7 +309,7 @@
 }
 #content #box .right .myClass .bottom .details .wordBox {
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #999;
   text-align: center;
   position: absolute;
@@ -342,7 +342,7 @@
   width: 100%;
   height: 100%;
   line-height: 53px;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #333;
   text-align: center;
 }
@@ -363,7 +363,7 @@
 #content #box .right .myTask .bottom .section p {
   height: 27px;
   border-bottom: 1px solid #ededed;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #999;
 }
 #content #box .right .myTask .bottom .section ul {
@@ -372,7 +372,7 @@
 #content #box .right .myTask .bottom .section ul li {
   height: 38px;
   padding: 0 15px;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
   line-height: 38px;
   position: relative;
@@ -415,8 +415,8 @@
   position: relative;
 }
 #content #box .right .account p {
-  font-size: 1.4rem;
-  color: 1.4rem;
+  font-size: 14px;
+  color: 14px;
   position: absolute;
   top: 126px;
   left: 336px;
@@ -429,7 +429,7 @@
   right: 390px;
 }
 #content #box .right .account form .input label {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
 }
 #content #box .right .account form .input label input {
@@ -437,6 +437,7 @@
   height: 36px;
   padding: 0 3px;
   border: 1px solid #e0e0e0;
+  line-height: 36px;
 }
 #content #box .right .account form .tips {
   position: absolute;
@@ -444,7 +445,7 @@
   height: 14px;
 }
 #content #box .right .account form .tips span {
-  font-size: 1.2rem;
+  font-size: 12px;
   color: #666;
   line-height: 14px;
 }
@@ -503,7 +504,7 @@
   top: 202px;
   left: 326px;
   background-color: #29b572;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #fff;
   line-height: 38px;
   text-align: center;
@@ -516,7 +517,7 @@
 #content #box .right .couponCode > p {
   height: 50px;
   padding-left: 20px;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #999;
   line-height: 50px;
   border-bottom: 1px solid #f2f2f2;
@@ -530,16 +531,16 @@
   float: left;
 }
 #content #box .right .couponCode ul li p {
-  font-size: 1.2rem;
+  font-size: 12px;
   color: #29b572;
   text-align: center;
 }
 #content #box .right .couponCode ul li p .money {
-  font-size: 6.4rem;
+  font-size: 64px;
   line-height: 64px;
 }
 #content #box .right .couponCode ul li p .unit {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 #content #box .right .couponCode ul li .first {
   padding-top: 30px;
@@ -565,7 +566,10 @@
   color: #c7c7c7;
 }
 #content #box .right .couponCode ul .timeLimit .fourth {
+  height: 32px;
   background-color: #c7c7c7;
+  color: #fff;
+  line-height: 32px;
 }
 #content #box .right .student {
   display: none;
@@ -574,7 +578,7 @@
   height: 572px;
 }
 #content #box .right .student p {
-  font-size: 2.2rem;
+  font-size: 22px;
   color: #333;
   line-height: 167px;
   padding-left: 320px;
@@ -586,19 +590,21 @@
 #content #box .right .student form div {
   float: right;
   margin-bottom: 12px;
+  display: block;
 }
 #content #box .right .student form div label {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
-  text-align: right;
+  /*text-align: right;*/
 }
 #content #box .right .student form div label input {
   width: 300px;
   height: 36px;
   border: 1px solid #E0E0E0;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
   padding: 0 3px;
+  line-height: 36px;
 }
 #content #box .right .student form .btn {
   position: absolute;
@@ -606,7 +612,7 @@
   height: 38px;
   left: 410px;
   top: 275px;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #fff;
   line-height: 38px;
   text-align: center;

@@ -43,6 +43,7 @@ $(function() {
 	})
 	shouping();
 	function shouping() {
+		$("#chart1").html("");
 		var myChart = echarts.init($("#chart1").get(0));
 		myChart.setOption({
 			title:{
@@ -165,6 +166,7 @@ $(function() {
 	/*---------- 所在班级图表 ----------*/
 	$(".class").on("click", function() {
 		if ($(".myClass").css("display") === "block") {
+			$("#chart2").html("");
 			var myChart1 = echarts.init($("#chart2").get(0));
 			myChart1.setOption({
 				title:{
@@ -358,8 +360,8 @@ $(function() {
 	
 	/*---------- 表单数据判断 ----------*/
 	var _value1 = $.trim($(".first input").val());
-	var _value2 = $('.second input').val().trim();
-	var _value3 = $('.third input').val().trim();
+	var _value2 = $.trim($('.second input').val());
+	var _value3 = $.trim($('.third input').val());
 	$('.first input').on("blur", function() {
 		_value1 = $.trim($(".first input").val());
 		if (_value1 == "") {
@@ -379,13 +381,13 @@ $(function() {
 	
 	var flag = false;
 	$('.third input').on("blur", function() {
-		_value3 = $('.third input').val().trim();
+		_value3 = $.trim($('.third input').val());
 		flag = true;
 		panduan1();
 	})
 	function panduan() {
-		_value1 = $(".first input").val().trim();
-		_value2 = $('.second input').val().trim();
+		_value1 = $.trim($(".first input").val());
+		_value2 = $.trim($('.second input').val());
 		if (_value2 == "") {
 			$('.secondTips .summary').show();
 		}
