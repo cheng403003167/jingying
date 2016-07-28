@@ -15,7 +15,7 @@
 #content .box .sideBar li p {
   border-left: 2px solid #fff;
   padding-left: 16px;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
   line-height: 48px;
 }
@@ -39,7 +39,7 @@
   line-height: 56px;
 }
 #content .box .right .top p {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #858585;
   line-height: 34px;
   border-bottom: 1px solid #E8E8E8;
@@ -49,9 +49,9 @@
 }
 #content .box .right .bottom p {
   padding: 13px 0;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #333;
-  text-indent: 2em;
+  text-indent: 32px;
   line-height: 30px;
 }
 #content .box .right .bottom div {
