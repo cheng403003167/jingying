@@ -17,7 +17,7 @@ a{
   height: 48px;
 }
 #content #box .left ul li p {
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 48px;
   color: #333;
   padding-left: 18px;
@@ -40,7 +40,7 @@ a{
   width: 1038px;
 }
 .title{
-	font-size: 2.2rem;
+	font-size: 22px;
 	font-weight: bolder;
 	margin-bottom: 20px;
 }
@@ -52,7 +52,7 @@ a{
 	width: 124px;
 	height: 70px;
 	line-height: 70px;
-	font-size: 1.6rem;
+	font-size: 16px;
 	text-align: center;
 	position: relative;
 }
@@ -69,7 +69,7 @@ a{
 }
 .canlist{
 	float: right;
-	font-size: 1.4rem;
+	font-size: 14px;
 	line-height: 70px;
 	margin-right: 30px;
 	color: #999;
@@ -141,7 +141,7 @@ a{
 .describe{
 	width: 100%;
 	display: inline-block;
-	font-size: 1.4rem;
+	font-size: 14px;
 	line-height: 40px;
 	text-align: center;
 	vertical-align: middle;
@@ -195,7 +195,7 @@ a{
 	display: none;
 	box-sizing: border-box;
 	padding: 30px 40px;
-	font-size: 1.4rem;
+	font-size: 14px;
 	line-height: initial;
 	background-color: #fafafa;
 	border-top: 1px solid #e8e8e8;
@@ -233,7 +233,7 @@ label{
 }
 .Oper p{
 	padding: 0 10px;
-	font-size: 1.4rem;
+	font-size: 14px;
 	line-height: 28px;
 }
 .Oper p:hover{
@@ -251,19 +251,19 @@ label{
 	padding: 10px;
 	border: 1px solid #E8E8E8;
 	resize: none;
-	font-size: 1.4rem;
+	font-size: 14px;
 	outline: none;
 	vertical-align: top;
 }
 .zisu{
-	font-size: 1.2rem;
+	font-size: 12px;
 	display: inline-block;
 	vertical-align: bottom;
 }
 .qian{
 	width: 90%;
 	height: 28px;
-	font-size: 1.4rem;
+	font-size: 14px;
 	border: 0;
 }
 .refundUp{
@@ -276,7 +276,7 @@ label{
 	margin-left: 82px;
 	text-align: center;
 	line-height: 32px;
-	font-size: 1.4rem;
+	font-size: 14px;
 }
 .everyList .Operatelist{
 	/*display: block;*/

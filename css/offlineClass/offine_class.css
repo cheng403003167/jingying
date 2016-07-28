@@ -8,7 +8,7 @@
 }
 #nav ul {
   height: 52px;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #333;
 }
 #nav ul li {
@@ -84,7 +84,7 @@
   float: right;
   line-height: 66px;
   color: #666;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 #offline_content .offline_content_title .sales div {
   background: url("../../img/icon_bg.png") no-repeat;
@@ -136,27 +136,27 @@
   bottom: 10px;
   right: 5px;
   color: #FFFFFF;
-  font-size: 1.2rem;
+  font-size: 12px;
   background-color: #333;
 }
 #offline_content .offline_class li h2 {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 #offline_content .offline_class li p {
   color: #666;
-  font-size: 1.2rem;
+  font-size: 12px;
 }
 #offline_content .offline_class li h3 span {
   color: #edaa80;
-  font-size: 2.2rem;
+  font-size: 22px;
 }
 #offline_content .offline_class li h3 .mm {
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 #offline_content .offline_class li h3 .sales_num {
   color: #666;
-  font-size: 1.4rem;
+  font-size: 14px;
   margin-left: 45px;
 }
 #offline_content .offline_class li h3 del {
@@ -196,7 +196,7 @@
   background-color: #29b572;
 }
 .classTitle{
-	font-size: 1.5rem !important;
+	font-size: 15px !important;
 	font-weight: bold;
 	color: #333 !important;
 	width: 100%;
@@ -218,7 +218,7 @@
 	display: inline-block;
 }
 .offline_content_title li a{
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #000 !important;
 }
 .nav_classify li:nth-of-type(n+3) a{

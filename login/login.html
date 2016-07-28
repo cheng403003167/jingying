@@ -21,7 +21,7 @@
 						<a href="javascript:void(0)">互联网头条</a>
 					</li>
 					<li class="deng">
-						<a href="javascript:void(0)">课程</a>
+						<a href="../index.html?wei">课程</a>
 					</li>
 				</ul>				
 			</div>
@@ -153,6 +153,8 @@
 								$(".warnPhone3").show();
 							}else if(data == "noCode"){
 								$(".warnCode2").eq(0).show();
+							}else if(data == "ok"){
+								location.href = "../index.html?cheng";
 							}
 						}
 					})

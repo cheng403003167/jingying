@@ -11,7 +11,7 @@ aside{
 	padding: 30px 16px 35px;
 	background-color: #fff;
 	float: right;
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 .playFor{
 	width: 915px;
@@ -30,7 +30,7 @@ aside{
 	background: url(../../img/signUp-1.png) left 0 no-repeat;
 }
 .rightText{
-	font-size: 1.8rem;
+	font-size: 18px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -41,10 +41,10 @@ aside{
 	color: #ea9b65;
 }
 .mintext,.num{
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 .everyMethod{
-	font-size: 1.6rem;
+	font-size: 16px;
 	margin: 28px 0 44px;
 	border: 1px solid #e8e8e8;
 	padding: 30px 18px;
@@ -96,7 +96,7 @@ aside{
 }
 .playPhone{
 	padding-top: 30px;
-	font-size: 1.6rem;
+	font-size: 16px;
 	border-top: 1px dashed #ccc;
 }
 .logo2{
@@ -121,7 +121,7 @@ td{
 	line-height: 74px;
 }
 table,th,td{
-	font-size: 1.4rem;
+	font-size: 14px;
 	border: 1px solid #e8e8e8;
 	border-collapse: collapse;
 }
@@ -137,7 +137,7 @@ table,th,td{
 	float: right;
 	color: #fff;
 	margin-top: 19px;
-	font-size: 1.8rem;
+	font-size: 18px;
 	text-align: center;
 	line-height: 42px;
 	background-color: #ea9b65;
@@ -165,8 +165,8 @@ table,th,td{
 	background-position: 0 -30px;
 }
 .p2{
-	font-size: 1.4rem;
-	line-height: 1.4rem;
+	font-size: 14px;
+	line-height: 14px;
 	margin: 35px 0;
 }
 .p3{

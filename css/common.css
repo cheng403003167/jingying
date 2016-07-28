@@ -52,7 +52,7 @@
   padding-left: 12px;
   border: 1px solid #e0e0e0;
   border-radius: 1px;
-  font-size: 1.4rem;
+  font-size: 14px;
   z-index: 2;
 }
 #header #nav_head ul .choose_city p:before {
@@ -88,7 +88,7 @@
   width: 78px;
   height: 52px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 12px;
   text-align: center;
 }
 #header #nav_head ul .choose_city ul li img {
@@ -96,24 +96,54 @@
   width: 100%;
 }
 #header #nav_head ul .nav_right_bar {
+  position: relative;
   float: right;
 }
 #header #nav_head ul .nav_right_bar div {
-  width: 82px;
   text-align: right;
 }
 #header #nav_head ul .nav_right_bar div a {
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 #header #nav_head ul .nav_right_bar div .register_bar {
   border-left: 1px solid #666;
+}
+#header #nav_head ul .nav_right_bar div img {
+  vertical-align: middle;
+}
+#header #nav_head ul .nav_right_bar div p {
+  display: inline-block;
+  padding-right: 15px;
+  line-height: 14px;
+  background: url("../img/icon_bg.png") no-repeat;
+  background-position: 66px -395px;
+}
+#header #nav_head ul .nav_right_bar ul {
+  display: none;
+  position: absolute;
+  top: 74px;
+  left: 0;
+  width: 122px;
+  height: 65px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+#header #nav_head ul .nav_right_bar ul li {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  text-align: center;
+  line-height: 32px;
+}
+#header #nav_head ul .nav_right_bar ul .out {
+  border-bottom: 1px solid #dbdbdb;
 }
 /**************** 头部导航条 end ****************/
 /**************** 尾部 begin ****************/
 #footer {
   height: 373px;
   background-color: #fff;
-  font-size: 1.2rem;
+  font-size: 12px;
 } /**************** 尾部 end ****************/
 #footer #nav_footer {
   width: 1224px;
@@ -122,7 +152,7 @@
   border-bottom: 1px solid #e0e0e0;
 }
 #footer #nav_footer .friend_link {
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #333;
   margin-right: 20px;
 }

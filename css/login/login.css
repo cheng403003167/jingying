@@ -31,7 +31,7 @@ a{
 	float: left;
 	width: 50%;
 	text-align: center;
-	font-size: 1.6rem;
+	font-size: 16px;
 	line-height: 50px;
 	color: #000000;
 	position: relative;
@@ -49,14 +49,14 @@ a{
 	display: block;
 }
 .col1:hover{
-	font-size: 1.7rem;
+	font-size: 17px;
 	color: #29b572;
 }
 .lineShow{
 	display: block;
 }
 .fontSize{
-	font-size: 1.7rem;
+	font-size: 17px;
 	color: #29b572;
 }
 .logon{
@@ -91,7 +91,7 @@ a{
 .input{
 	width: 78%;
 	height: 20px;
-	font-size: 1.4rem;
+	font-size: 14px;
 	border: 0;
 	margin-left: 8px;
 	padding-left: 10px;
@@ -136,7 +136,7 @@ a{
 .codebtn{
 	width: 90px;
 	height: 30px;
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #29B572;
 	line-height: 30px;
 	margin-top: 13px;
@@ -161,8 +161,8 @@ a{
 }
 .warn{
 	color: red;
-	font-size: 1.2rem;
-	text-indent: 1.5rem;
+	font-size: 12px;
+	text-indent: 15px;
 	background: url(../../img/warning.png) left center no-repeat;
 	background-size: 6%;
 	display: none;
@@ -174,12 +174,12 @@ label{
 	margin-bottom: 3px;
 }
 .cl{
-	font-size: 1.2rem;
+	font-size: 12px;
 	margin-right: 5px;
 	-webkit-appearance: checkbox;
 }
 .up{
-	font-size: 1.6rem;
+	font-size: 16px;
 	text-align: center;
 	display: block;
 	height: 40px;
@@ -199,12 +199,12 @@ label{
 .line{
 	width:25%;
 	height: 1px;
-	margin-top: 0.8rem;
+	margin-top: 8px;
 	background-color: #ccc;
 }
 .centerText{
 	width: 50%;
-	font-size: 1.4rem;
+	font-size: 14px;
 	color: #848585;
 }
 .lianjie{

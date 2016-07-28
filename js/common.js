@@ -5,4 +5,9 @@
 			$(".choose_city p").text($(this).text());
 //			$(".choose_city p").text($(this).text());
 		})
+		$(".nav_right_bar").hover(function(){
+			$(".nav_right_bar ul").slideDown();
+		},function(){
+			$(".nav_right_bar ul").slideUp();
+		})
 	})
