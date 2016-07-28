@@ -28,6 +28,7 @@ img {
 .school_left {
   float: left;
   width: 920px;
+  margin-bottom: 30px;
 }
 .school_left .school_header {
   width: 920px;
