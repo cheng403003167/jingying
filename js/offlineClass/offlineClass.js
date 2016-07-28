@@ -1,5 +1,28 @@
 $(function(){
-	
+	var $x = location.search;
+	var reg1 = /\?/g;
+	$x = $x.replace(reg1,'')
+	$.ajax({
+		type:"get",
+		url:"../PHP/offlineClass/classDetail.php",
+		dataType:"JSON",
+		data:{
+			t:$x
+		},
+		success:function(data){
+			console.log(data)
+			$('.offline_courseName').text(data[0].classType);
+			$(".type").text(data[0].type);
+			$(".classnum").text(data[0].classNum);
+			$(".classTime").text(data[0].classCycle);
+			$(".classPrice").text(data[0].classPrice);
+			$(".shoolAdress").text(data[0].shoolAddress);
+			$(".suitable").text(data[0].suitable);
+			$(".contentOfCourses").text(data[0].contentOfCourses);
+			$(".learningGoals").text(data[0].learningGoals);
+			$(".coursebook").text(data[0].coursebook);
+		}
+	});
 	//  课程详情，其他课程，用户评价  切换
 	$("#offline_list").on("click","li",function(){
 		$(this).addClass("offline_liBorderTop").siblings().removeClass("offline_liBorderTop");
@@ -51,4 +74,77 @@ $(function(){
 		}
 		
 	})
+// <<<<<<< HEAD
+	
+	$(".offline_scheduleConsult").on("click",function(){
+		$(".offline_userName").val("");
+		$(".offline_userTell").val("");
+		$("#offline_courseImpression").text("请选择课程印象");
+		$(".offline_TIPS").hide();
+		$(".offline_mask").css("display","block")
+	})
+	$(".offline_date").on("click",function() {
+		$(".offline_mask").hide();
+	})
+	$("#offline_courseImpression").on("click",function(){
+		$(".offline_courseOption").slideToggle();
+		$(this).toggleClass("offline_bottomArrow");
+	})
+	$(".offline_courseOption").on("click","li",function(){
+		$("#offline_courseImpression").text($(this).text());
+		$("#offline_courseImpression").removeClass("offline_bottomArrow")
+		$(".offline_courseOption").slideUp()
+	})
+	$("#offline_submit").on("click",function() {
+		var flg1 = false;
+		var flg2 = false;
+		var flg3 = false;  //  flg作为条件通过的判定
+		
+		var name = $(".offline_userName").val();
+		name = name.trim();
+		if(name) {
+			var reg1 = /^[\u4e00-\u9fa5]|[a-z,A-Z]$/g
+			if(reg1.test(name)) {
+				flg1 = true;  //  flg1条件通过
+				$(".offline_TIPS1").hide();
+				$(".offline_TIPS6").hide();
+			}else {
+				$(".offline_TIPS1").hide();
+				$(".offline_TIPS6").show();
+			}
+		}else {
+			$(".offline_TIPS6").hide();
+			$(".offline_TIPS1").show();
+		}
+		
+		var tel = $(".offline_userTell").val();
+		tel = tel.trim();
+		if(tel) {
+			var reg2 = /^\b[1]{1}\d{10}\b$/g 
+			if(reg2.test(tel)) {
+				flg2 = true;  //  flg2条件通过
+				$(".offline_TIPS2").hide();
+				$(".offline_TIPS3").hide();
+			}else {
+				$(".offline_TIPS2").hide();
+				$(".offline_TIPS3").show();
+			}
+		}else {
+			$(".offline_TIPS3").hide();
+			$(".offline_TIPS2").show();
+		}
+		
+		if($("#offline_courseImpression").text() !== "请选择课程印象") {
+			flg3 = true;  //  flg3条件通过
+			$(".offline_TIPS4").hide();
+		}else {
+			$(".offline_TIPS4").show();
+		}
+		
+		if(flg1 && flg2 && flg3) {  //  条件都通过
+			$(".offline_mask").hide();
+		}
+	})
+// =======
+// >>>>>>> 5ee06d781b2f88ea58d5b2da85e10894b9743fa7
 })

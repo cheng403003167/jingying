@@ -122,6 +122,7 @@
 #content #box .right {
   float: right;
   width: 1038px;
+  margin-bottom: 30px;
 }
 #content #box .right .myLearningCurve .top {
   background-color: #fff;
