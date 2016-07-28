@@ -36,295 +36,307 @@ $(function() {
 	/*----------------------------------*/
 	
 	/*--------- 学习曲线图表 ----------*/
-	var myChart = echarts.init($("#chart1").get(0));
-	myChart.setOption({
-		title:{
-			text: "学习曲线：（你当前所在班级为A班）"
-		},
-		legend:{
-			x:"right",
-			itemHeight: 10,
-			itemWidth: 10,
-			textStyle:{
-				fontSize: 12,
+	$(".curve").on("click", function() {
+		if ($(".myLearningCurve").css("display") === "block") {
+			shouping();
+		}
+	})
+	shouping();
+	function shouping() {
+		var myChart = echarts.init($("#chart1").get(0));
+		myChart.setOption({
+			title:{
+				text: "学习曲线：（你当前所在班级为A班）"
 			},
-			data:[{
-				name:'分数',
-				icon:"bar",
-				
-			},{
-				name:'线性分数',
-				icon:"bar"
-			}]
-		},
-		grid:[{
-			x:30,
-			x2:40,
-			y2:80
-		}],
-		dataZoom:{
-			show:true,
-			realtime:true,
-		},
-		calculable:true,
-		xAxis:{
-			type:'value', 
-			name:'天数',
-			nameTextStyle:{
-				color:"#999999"
-			},
-			splitNumber: 20, //x轴显示多少刻度
-			axisLine:{
-				lineStyle:{
-					color:"#e5e5e5"
-				}
-			},
-			axisLabel:{
+			legend:{
+				x:"right",
+				itemHeight: 10,
+				itemWidth: 10,
 				textStyle:{
-					color:"#999999",
-					baseline:"top" //x轴刻度字的位置，往下依次为bottom、middle、top
-				}
+					fontSize: 12,
+				},
+				data:[{
+					name:'分数',
+					icon:"bar",
+					
+				},{
+					name:'线性分数',
+					icon:"bar"
+				}]
 			},
-//			boundaryGap:[0,0.1], //坐标轴两端留白
-			splitLine:{
-				show:false
-			},
-			axisTick:{
+			grid:[{
+				x:30,
+				x2:40,
+				y2:80
+			}],
+			dataZoom:{
 				show:true,
-				length:-5
-			}
-		},
-		yAxis:{
-			type:"value",
-			name:"分数",
-			max:"100",
-			nameTextStyle:{
-				color:"#999999"
+				realtime:true,
 			},
-			splitNumber:11,
-			axisLine:{
-				lineStyle:{
-					color:"#e5e5e5"
-				}
-			},
-			axisLabel:{
-				textStyle:{
-					color:"#999999",
-				}
-			},
-			axisTick:{
-				show:false //刻度线
-			}
-		},
-		series:[
-			{
-				name:'分数',
-				type:'line',
-				itemStyle:{
-					normal:{
-						lineStyle:{
-							color:'#5fc895' //折线段颜色
-						},
-						color:'#5fc895', //折线点颜色
+			calculable:true,
+			xAxis:{
+				type:'value', 
+				name:'天数',
+				nameTextStyle:{
+					color:"#999999"
+				},
+				splitNumber: 20, //x轴显示多少刻度
+				axisLine:{
+					lineStyle:{
+						color:"#e5e5e5"
 					}
 				},
-				data:[[1.3,52],[5.5,39],[9,42],[12.2,51],[15.3,64],[18.5,28],[22.1,47]],
+				axisLabel:{
+					textStyle:{
+						color:"#999999",
+						baseline:"top" //x轴刻度字的位置，往下依次为bottom、middle、top
+					}
+				},
+	//			boundaryGap:[0,0.1], //坐标轴两端留白
+				splitLine:{
+					show:false
+				},
+				axisTick:{
+					show:true,
+					length:-5
+				}
 			},
-			{
-				 name:"线性分数",
-				 type:"line",
-				 itemStyle:{
-				 	normal:{
-				 		lineStyle:{
-				 			color:'#ea9b65'
-				 		}
-				 	}
-				 },
-				 data:[
-				 {
-				 	value:[4.9,84],
-				 	symbol:"none"
-				 },
-				 {
-				 	value:[21.5,31],
-				 	symbol:"none"
-				 }]
-			}
-		]
-	});
+			yAxis:{
+				type:"value",
+				name:"分数",
+				max:"100",
+				nameTextStyle:{
+					color:"#999999"
+				},
+				splitNumber:11,
+				axisLine:{
+					lineStyle:{
+						color:"#e5e5e5"
+					}
+				},
+				axisLabel:{
+					textStyle:{
+						color:"#999999",
+					}
+				},
+				axisTick:{
+					show:false //刻度线
+				}
+			},
+			series:[
+				{
+					name:'分数',
+					type:'line',
+					itemStyle:{
+						normal:{
+							lineStyle:{
+								color:'#5fc895' //折线段颜色
+							},
+							color:'#5fc895', //折线点颜色
+						}
+					},
+					data:[[1.3,52],[5.5,39],[9,42],[12.2,51],[15.3,64],[18.5,28],[22.1,47]],
+				},
+				{
+					 name:"线性分数",
+					 type:"line",
+					 itemStyle:{
+					 	normal:{
+					 		lineStyle:{
+					 			color:'#ea9b65'
+					 		}
+					 	}
+					 },
+					 data:[
+					 {
+					 	value:[4.9,84],
+					 	symbol:"none"
+					 },
+					 {
+					 	value:[21.5,31],
+					 	symbol:"none"
+					 }]
+				}
+			]
+		});
+	}
 	/*-------------------------*/
 	
 	/*---------- 所在班级图表 ----------*/
-	var myChart1 = echarts.init($("#chart2").get(0));
-	myChart1.setOption({
-		title:{
-			text:"您当前所在班级：A班",
-			textStyle:{
-				fontSize:16,
-				color:"#333333"
-			}
-		},
-		legend:{
-			x:'right',
-			itemWidth:10,
-			itemHeight:10,
-			data:[{
-				name:'同学成绩',
-				icon:"bar"
-			},{
-				name:'班级平均分',
-				icon:'bar'
-			}]
-		},
-		calculable:true,
-		grid:{
-			x:30,
-			x2:10,
-			y2:80
-		},
-		dataZoom:{
-			show:true,
-		},
-		xAxis: {
-			type:"category",
-			axisLine:{
-				show:true,
-				lineStyle:{
-					color:"#d4d4d4"
-				}
-			},
-			axisTick:{
-				show:true,
-				length:-5,
-				lineStyle:{
-					color:"#d4d4d4"
-				}
-			},
-			axisLabel:{
-				show:true,
-				interval:0,
-				textStyle:{
-					color:"#999999"
-				}
-			},
-            data: ['王晓晔','张三','习近平','贾庆玲','李四','刘能','温家宝','江泽民','班级平均','贾庆玲','李四','刘能','温家宝','江泽民','江泽民']
-        },
-		yAxis:{
-			type:"value",
-			axisLine:{
-				show:true,
-				lineStyle:{
-					color:"#d4d4d4"
-				}
-			},
-			axisTick:{
-				show:false
-			},
-			axisLabel:{
-				show:true,
-				textStyle:{
-					color:"#999999"
-				}
-			}
-		},
-		series:[
-			{
-				name:"同学成绩",
-				type:"bar",
-				stack:"成绩",
-				itemStyle:{
-					normal:{
-						color:"#aac56c"
+	$(".class").on("click", function() {
+		if ($(".myClass").css("display") === "block") {
+			var myChart1 = echarts.init($("#chart2").get(0));
+			myChart1.setOption({
+				title:{
+					text:"您当前所在班级：A班",
+					textStyle:{
+						fontSize:16,
+						color:"#333333"
 					}
 				},
-				data:[
-				{
-					value:10.2,
-					itemStyle:{
-						normal:{
-							label:{
-								show:true,
-								position:"top",
-								formatter:"{c}",
-								textStyle:{
-									color:"#333333",
-								}
-							}
+				legend:{
+					x:'right',
+					itemWidth:10,
+					itemHeight:10,
+					data:[{
+						name:'同学成绩',
+						icon:"bar"
+					},{
+						name:'班级平均分',
+						icon:'bar'
+					}]
+				},
+				calculable:true,
+				grid:{
+					x:30,
+					x2:10,
+					y2:80
+				},
+				dataZoom:{
+					show:true,
+				},
+				xAxis: {
+					type:"category",
+					axisLine:{
+						show:true,
+						lineStyle:{
+							color:"#d4d4d4"
 						}
-					}
-				},{
-					value:18,
-					itemStyle:{
-						normal:{
-							label:{
-								show:true,
-								position:"top",
-								formatter:"{c}",
-								textStyle:{
-									color:"#333333",
-								}
-							}
+					},
+					axisTick:{
+						show:true,
+						length:-5,
+						lineStyle:{
+							color:"#d4d4d4"
 						}
-					}
-				},{
-					value:22.5,
-					itemStyle:{
-						normal:{
-							label:{
-								show:true,
-								position:"top",
-								formatter:"{c}",
-								textStyle:{
-									color:"#333333",
-								}
-							}
+					},
+					axisLabel:{
+						show:true,
+						interval:0,
+						textStyle:{
+							color:"#999999"
 						}
-					}
-				},{
-					value:36,
-					itemStyle:{
-						normal:{
-							label:{
-								show:true,
-								position:"top",
-								formatter:"{c}",
-								textStyle:{
-									color:"#333333",
-								}
-							}
+					},
+		            data: ['王晓晔','张三','习近平','贾庆玲','李四','刘能','温家宝','江泽民','班级平均','贾庆玲','李四','刘能','温家宝','江泽民','江泽民']
+		        },
+				yAxis:{
+					type:"value",
+					axisLine:{
+						show:true,
+						lineStyle:{
+							color:"#d4d4d4"
 						}
-					}
-				},{
-					value:43,
-					itemStyle:{
-						normal:{
-							label:{
-								show:true,
-								position:"top",
-								formatter:"{c}",
-								textStyle:{
-									color:"#333333",
-								}
-							}
+					},
+					axisTick:{
+						show:false
+					},
+					axisLabel:{
+						show:true,
+						textStyle:{
+							color:"#999999"
 						}
-					}
-				},56,66,75,'-',74,66,57,46,38,26],
-				barWidth:30
-			},
-			{
-				name:"班级平均分",
-				type:"bar",
-				stack:"成绩",
-				itemStyle:{
-					normal:{
-						color:"#f1943c"
 					}
 				},
-				data:['-','-','-','-','-','-','-','-',90,'','','','','',''],
-				barWidth:30,
-			}
-		]
-	});
+				series:[
+					{
+						name:"同学成绩",
+						type:"bar",
+						stack:"成绩",
+						itemStyle:{
+							normal:{
+								color:"#aac56c"
+							}
+						},
+						data:[
+						{
+							value:10.2,
+							itemStyle:{
+								normal:{
+									label:{
+										show:true,
+										position:"top",
+										formatter:"{c}",
+										textStyle:{
+											color:"#333333",
+										}
+									}
+								}
+							}
+						},{
+							value:18,
+							itemStyle:{
+								normal:{
+									label:{
+										show:true,
+										position:"top",
+										formatter:"{c}",
+										textStyle:{
+											color:"#333333",
+										}
+									}
+								}
+							}
+						},{
+							value:22.5,
+							itemStyle:{
+								normal:{
+									label:{
+										show:true,
+										position:"top",
+										formatter:"{c}",
+										textStyle:{
+											color:"#333333",
+										}
+									}
+								}
+							}
+						},{
+							value:36,
+							itemStyle:{
+								normal:{
+									label:{
+										show:true,
+										position:"top",
+										formatter:"{c}",
+										textStyle:{
+											color:"#333333",
+										}
+									}
+								}
+							}
+						},{
+							value:43,
+							itemStyle:{
+								normal:{
+									label:{
+										show:true,
+										position:"top",
+										formatter:"{c}",
+										textStyle:{
+											color:"#333333",
+										}
+									}
+								}
+							}
+						},56,66,75,'-',74,66,57,46,38,26],
+						barWidth:30
+					},
+					{
+						name:"班级平均分",
+						type:"bar",
+						stack:"成绩",
+						itemStyle:{
+							normal:{
+								color:"#f1943c"
+							}
+						},
+						data:['-','-','-','-','-','-','-','-',90,'','','','','',''],
+						barWidth:30,
+					}
+				]
+			});
+		}
+	})
 	/*-------------------------*/
 	
 	/*--------- bottom部分点击效果 ----------*/
