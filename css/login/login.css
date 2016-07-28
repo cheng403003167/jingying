@@ -151,7 +151,6 @@ a{
 	color: #ccc;
 }
 .codebtn:hover{
-	border-color: #29B572;
 	background: -webkit-linear-gradient(#fff,#ccc);
 }
 .floatRight{
