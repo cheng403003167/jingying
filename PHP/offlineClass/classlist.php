@@ -1,5 +1,6 @@
 <?php
-	header("Access-Control-Allow-Origin");
+	header("Content-Type:text/plain;");
+	// echo "abcdddd";
 	include_once("../connect.php");
 	$sql = "select * from classDetail";
 	$result = mysql_query($sql);

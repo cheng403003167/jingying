@@ -1,4 +1,3 @@
-
 a{
 	color: #848585;
 }
@@ -65,8 +64,8 @@ a{
 .denglu,.logon{
 	width: 100%;
 	padding: 28px 0;
+	background-color: rgb(255,255,255);
 	background-color: rgba(255,255,255,0.9);
-	
 }
 .inputList{
 	width: 260px;

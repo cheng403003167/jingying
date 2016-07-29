@@ -2,7 +2,7 @@ $(function(){
 	$(".col1").on('click',function(){
 		$(this).addClass("fontSize").find(".bottomLine").addClass("lineShow");
 		$(this).siblings().removeClass("fontSize").find(".bottomLine").removeClass("lineShow");
-		if($(this).text().trim()==="注册"){
+		if($.trim($(this).text())==="注册"){
 			$(".logon").show();
 			$(".denglu").hide();
 			$('.warn').hide();
@@ -30,7 +30,7 @@ $(function(){
 	var $t = '';
 	$(".input").on("blur",function(){
 		$(this).parent("div").css({
-			borderColor:"#cc"
+			borderColor:"#ccc"
 		})
 		if($(this).hasClass("user")){
 			if(!$(this).val()){
