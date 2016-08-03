@@ -221,10 +221,10 @@
 	font-size: 14px;
 	color: #000 !important;
 }
-.nav_classify li:nth-of-type(n+3) a{
+.nav_classify li .word{
 	color: #000;
 }
-.nav_pos li:nth-of-type(n+3) a{
+.nav_pos li .word{
 	color: #000;
 }
 #offline_content{
