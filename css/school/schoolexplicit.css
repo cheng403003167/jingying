@@ -1,0 +1,347 @@
+/*img {
+  display: block;
+  width: 100%;
+}*/
+.school_colorGreen {
+  color: #29b572;
+}
+.offline_starColor_orange {
+  color: #ffb200;
+}
+.offline_starColor_gray {
+  color: #999;
+}
+.school_bodyBg {
+  background-color: #f5f5f5;
+}
+.offline_displayBlock {
+  display: block;
+}
+.offline_displayNone {
+  display: none;
+}
+.school_body {
+  width: 1224px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.school_left {
+  float: left;
+  width: 920px;
+  margin-bottom: 30px;
+}
+.school_left .school_header {
+  width: 920px;
+  height: 260px;
+  background-color: #fff;
+}
+.school_left .school_header > div {
+  height: 206px;
+  float: left;
+  margin-top: 26px;
+}
+.school_left .school_header > div:first-child {
+  width: 340px;
+  margin-left: 20px;
+  margin-right: 25px;
+}
+.school_left .school_header > div:last-child > p {
+  font-size: 24px;
+  line-height: 26px;
+}
+.school_left .school_header > div:last-child div {
+  position: relative;
+  width: 505px;
+  height: 70px;
+  border: 1px solid #e8e8e8;
+  margin-top: 32px;
+}
+.school_left .school_header > div:last-child div p {
+  position: absolute;
+  left: 10px;
+  background-color: #fff;
+}
+.school_left .school_header > div:last-child div p:first-child {
+  padding: 0 5px;
+  top: -14px;
+}
+.school_left .school_header > div:last-child div p:first-child span {
+  float: left;
+  font-size: 16px;
+  margin: 0 5px;
+}
+.school_left .school_header > div:last-child div p:last-child {
+  top: 60px;
+  height: 20px;
+  padding: 0 10px;
+  color: #666;
+}
+.school_left .school_header > div:last-child div p:last-child span {
+  font-size: 18px;
+}
+.school_left .school_header > div:last-child div .school_position {
+  top: 25px;
+  padding: 0 10px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999;
+  text-indent: 20px;
+  background-image: url(../../img/15ico_bg.png);
+  background-repeat: no-repeat;
+  background-position: 10px -626px;
+}
+.school_left .school_header > div:last-child a {
+  display: inline-block;
+  width: 128px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 38px;
+  text-align: center;
+  border: 1px solid #ea9b65;
+  color: #ea9b65;
+}
+.school_left .school_section {
+  margin-top: 30px;
+}
+.school_left .school_section .school_list {
+  background-color: #fff;
+}
+.school_left .school_section .school_list li {
+  width: 145px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 16px;
+  text-align: center;
+  border-top: 5px solid rgba(1, 1, 1, 0);
+  float: left;
+}
+.school_left .school_section .school_list li:hover {
+  color: #29b572;
+}
+.school_left .school_section .school_list .school_liBorderTop {
+  border-top-color: #29b572;
+  color: #29b572;
+}
+.school_left .school_section .school_detailsLists {
+  color: #999;
+  padding: 0 30px;
+  padding-bottom: 58px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+}
+.school_left .school_section .school_detailsLists li {
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 22px;
+} /* li end */
+.school_left .school_section .school_detailsLists li:last-child {
+  border-bottom: none;
+}
+.school_left .school_section .school_detailsLists li div {
+  zoom: 1;
+} /* div end*/
+.school_left .school_section .school_detailsLists li div:after {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+}
+.school_left .school_section .school_detailsLists li div:first-child {
+  font-size: 16px;
+  margin-top: 21px;
+  margin-bottom: 5px;
+}
+.school_left .school_section .school_detailsLists li div:first-child a {
+  color: #666;
+  float: left;
+}
+.school_left .school_section .school_detailsLists li div:first-child a:hover {
+  color: #29b572;
+}
+.school_left .school_section .school_detailsLists li div:first-child > span {
+  width: 32px;
+  height: 16px;
+  line-height: 16px;
+  margin-top: 2px;
+  margin-left: 10px;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+  border-radius: 2px;
+}
+.school_left .school_section .school_detailsLists li div:first-child .offline_online {
+  color: #29B572;
+  border: 1px solid #29B572;
+}
+.school_left .school_section .school_detailsLists li div:first-child .offline_offline {
+  color: #ea9b65;
+  border: 1px solid #ea9b65;
+}
+.school_left .school_section .school_detailsLists li div:first-child p {
+  color: #ea9b65;
+  float: right;
+}
+.school_left .school_section .school_detailsLists li div:last-child {
+  font-size: 14px;
+}
+.school_left .school_section .school_detailsLists li div:last-child > span {
+  float: left;
+  margin-right: 30px;
+}
+.school_left .school_section .school_detailsLists li div:last-child > p {
+  float: left;
+  margin-left: 40px;
+}
+.school_left .school_section .school_detailsLists li div:last-child > p:last-child {
+  float: right;
+}
+.school_left .school_section .school_detailsLists li div:last-child > p:last-child span {
+  color: #999;
+  text-decoration: line-through;
+  font-weight: 100;
+}
+.school_left .school_section .school_detailsLists li div:last-child > p span {
+  color: #29b572;
+}
+.school_left .school_section .school_schoolSynopsis {
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 30px 60px;
+}
+.school_left .school_section .school_schoolSynopsis h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 25px 0;
+}
+.school_left .school_section .school_schoolSynopsis div {
+  font-size: 14px;
+  line-height: 34px;
+  text-indent: 28px;
+  margin-bottom: 10px;
+}
+.school_left .school_section .school_officialPhoto {
+  display: none;
+  background-color: #fff;
+  padding: 0 18px 35px;
+}
+.school_left .school_section .school_officialPhoto img {
+  width: 197px;
+  height: 132px;
+  float: left;
+  margin: 18px 12px 25px;
+}
+.school_right {
+  float: right;
+}
+.school_right .school_positionPhoto {
+  width: 290px;
+  height: 260px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.school_right .school_positionPhoto p {
+  height: 20px;
+  margin-left: 17.5px;
+  margin-top: 27px;
+  margin-bottom: 20px;
+  text-indent: 25px;
+  font-size: 16px;
+  background-image: url(../../img/15ico_bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 -822px;
+}
+.school_right .school_positionPhoto div {
+  width: 255px;
+  height: 160px;
+  margin: 0 auto;
+}
+.school_right .school_hotSchool {
+  width: 100%;
+  padding: 0 6px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 15px;
+} /* .offline_hotCourse end */
+.school_right .school_hotSchool > p {
+  height: 70px;
+  line-height: 70px;
+  margin-left: 9px;
+}
+.school_right .school_hotSchool > p span {
+  font-size: 16px;
+}
+.school_right .school_hotSchool > p span:last-child {
+  color: #333;
+}
+.school_right .school_hotSchool > p .school_moreCourse {
+  float: right;
+  color: #666;
+}
+.school_right .school_hotSchool > p .school_moreCourse:hover {
+  text-decoration: underline;
+}
+.school_right .school_hotSchool ul {
+  margin-bottom: 26px;
+  padding-bottom: 30px;
+} /* ul end */
+.school_right .school_hotSchool ul li {
+  padding: 9px;
+  line-height: 26px;
+  color: #333;
+  border: 1px solid rgba(1, 1, 1, 0);
+} /* li end */
+.school_right .school_hotSchool ul li a {
+  display: block;
+  color: #666;
+  zoom: 1;
+}
+.school_right .school_hotSchool ul li a:after {
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: ".";
+}
+.school_right .school_hotSchool ul li:hover {
+  border-color: #E8E8E8;
+}
+.school_right .school_hotSchool ul li:hover .school_courseTitle {
+  color: #29b572;
+}
+.school_right .school_hotSchool ul li div {
+  float: left;
+} /* div end */
+.school_right .school_hotSchool ul li div:first-child {
+  width: 110px;
+  height: 60px;
+  margin-right: 10px;
+}
+.school_right .school_hotSchool ul li div:last-child {
+  height: 60px;
+  width: 140px;
+}
+.school_right .school_hotSchool ul li div:last-child p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.school_right .school_hotSchool ul li div:last-child .school_courseTitle {
+  font-size: 14px;
+  line-height: 14px;
+}
+.school_right .school_hotSchool ul li div:last-child .school_site {
+  color: #999;
+  line-height: 16px;
+}
+.school_right .school_hotSchool ul li div:last-child .school_stars {
+  line-height: 32px;
+}
+.school_right .school_hotSchool ul li div:last-child span {
+  font-size: 12px;
+}
+/*# sourceMappingURL=schoolexplicit.css.map */

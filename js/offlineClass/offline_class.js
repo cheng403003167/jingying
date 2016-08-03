@@ -1,10 +1,11 @@
 $(function(){
 	var page = 0,lass = '';
 	$.ajax({
+		type:"get",
 		url:"../PHP/offlineClass/classlist.php",
-		// dataType:"JSON",
-		cathe:false,
+		dataType:"JSON",
 		success:function(data){
+			console.log(data)
 			$(".class_num span").text(data.length);
 			var zheng = parseInt(data.length/15);
 			if(data.length%15>0){

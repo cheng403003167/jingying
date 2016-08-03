@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/personalCenter/personalCenter.css" />
+		<title>personalCenter</title>
+		<script src="../js/personalCenter/echarts.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div id="nav_head">
+				<ul class="clearfix">
+					<li class="logo">
+						<img src="../img/logo.png"/>
+					</li>
+					<li class="choose_city">
+						<p class="clearfix">北京</p>
+						<ul class="clearfix city_pop">
+							<li>							
+								<a href="javascript:void(0)">
+									<img src="../img/beijing.png" alt="" />
+									<span>北京</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/dalian.png"/>
+									<span>大连</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/zhengzhou.png"/>
+									<span>郑州</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/shanghai.png"/>
+									<span>上海</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/guangzhou.png"/>
+									<span>广州</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/xi_an.png"/>
+									<span>西安</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/wuhan.png"/>
+									<span>武汉</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav_active">
+						<a href="../index.html?ge">首页</a>
+					</li>
+					<li>
+						<a href="../offlineClass/offline_class.html">线下课程</a>
+					</li>
+					<li>
+						<a href="../onlineClass/online_class.html">在线课程</a>
+					</li>
+					<li>
+						<a href="../school/school.html">学校</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">互联网头条</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">+提问</a>
+					</li>
+					<li class="nav_right_bar">
+						<div class="dengluafter">
+								<img src="../img/user_head.png" alt="" />
+								<p><a href="../offlineClass/mylist.html">个人中心</a></p>
+								<ul>
+									<li class="out">
+										<a href="../login/login.html">退出</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">我是在校学生</a>
+									</li>
+								</ul>
+							</div>
+					</li>	
+				</ul>
+									
+			</div>
+		</div>
+		
+		<div id="content">
+			<div id="status" class="clearfix">
+				<div class="sideBar">
+					<div class="container">
+						<img src="../img/learningCurve_1.png" alt="" />
+					</div>
+					<h3>速度决定一切</h3>
+					<p><span>修改</span></p>
+				</div>
+				<div class="right">
+					<h3>学习情况：</h3>
+					<ul class="details">
+						<li>
+							<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+							<p class="progress"><span class="currentTime">4</span>分钟/<span class="totalTime">10</span>分钟</p>
+							<p class="progressBarBox"><span class="progressBar"></span></p>
+							<p class="score">当前分数：<span>98</span>分</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">AutoCAD工程制图基础入门与提高</a>
+							<p class="progress"><span class="currentTime">2</span>分钟/<span class="totalTime">10</span>分钟</p>
+							<p class="progressBarBox"><span class="progressBar"></span></p>
+							<p class="score">当前分数：<span>98</span>分</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">AutoCAD工程制图基础入门与提高</a>
+							<p class="progress"><span class="currentTime">10</span>分钟/<span class="totalTime">10</span>分钟</p>
+							<p class="progressBarBox"><span class="progressBar"></span></p>
+							<p class="score">当前分数：<span>98</span>分</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="box" class="clearfix">
+				<div class="left">
+					<ul>
+						<li>
+							<span class="currentSpan"></span>
+							<p class="currentP curve">我的学习曲线</p>
+						</li>
+						<li>
+							<span></span>
+							<p class="class">我所在的班级</p>
+						</li>
+						<li>
+							<span></span>
+							<p>我的作业</p>
+						</li>
+						<li>
+							<span></span>
+							<p>账号设置</p>
+						</li>
+						<li>
+							<span></span>
+							<p>优惠码</p>
+						</li>
+						<li>
+							<span></span>
+							<p>我是在校生</p>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="myLearningCurve part">
+						<div class="top">
+							<ul class="clearfix">
+								<li>
+									<span class="currentSpan"></span>
+									<p>IOS课程</p>
+								</li>
+								<li>
+									<span></span>
+									<p>Android课程</p>
+								</li>
+							</ul>
+							<div id="chart1"></div>
+						</div>
+						<div class="bottom">
+						 	<ul class="subSelect">
+						 		<li class="subject1 selected">
+						 			<p>IOS课程</p>
+						 		</li>
+						 		<li class="subject2">
+						 			<p>Android课程</p>
+						 		</li>
+						 	</ul>
+						 	<div class="details">
+							 	<div class="subject1Details"></div>
+							 	<div class="wordBox">
+							 		<p>未来这里是记录你学习曲线的地方</p>
+							 		<p>将包含你的学习分数，学习时间等状态，<a href="javascript:void(0);">挑选一门课程</a>，开始学习吧！</p>
+							 	</div>
+						 	</div>
+						</div>
+					 </div>
+					<div class="myClass part">
+					 	<div class="top">
+						 	<ul class="subSelect">
+						 		<li class="subject1 selected">
+						 			<p>IOS课程</p>
+						 		</li>
+						 		<li class="subject2">
+						 			<p>Android课程</p>
+						 		</li>
+						 	</ul>
+						 	<div id="chart2"></div>
+						</div>
+						<div class="bottom">
+						 	<ul class="subSelect">
+						 		<li class="subject1 selected">
+						 			<p>IOS课程</p>
+						 		</li>
+						 		<li class="subject2">
+						 			<p>Android课程</p>
+						 		</li>
+						 	</ul>
+						 	<div class="details">
+							 	<div class="subject1Details"></div>
+							 	<div class="wordBox">
+							 		<p>未来这里是了解你所在在线班级的地方里面会有和你一起学习的小伙伴</p>
+							 		<p>将包含班级每个小伙伴的成绩，班级平均成绩，你的排名等状态，<a href="javascript:void(0);">挑选一门课程</a>，开始学习吧！</p>
+							 	</div>
+						 	</div>
+						</div>
+					 </div>
+					<div class="myTask part">
+					 	<div class="top">
+						 	<ul class="subSelect">
+						 		<li class="subject1 selected">
+						 			<p>IOS课程</p>
+						 		</li>
+						 		<li class="subject2">
+						 			<p>Android课程</p>
+						 		</li>
+						 	</ul>
+						</div>
+						<div class="bottom">
+							<div class="section">
+								<p>第一课 ~ 第十课</p>
+								<ul>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="section">
+								<p>第一课 ~ 第十课</p>
+								<ul>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">网页开发 （HTML+CSS+JavaScript 从入门到精通）【职坐标】</a>
+										<span>完成</span>
+										<div><span class="like"></span>&nbsp;<span>7230</span></div>
+									</li>
+									<li>
+										<a href="javascript:void(0);">Android 项目开发实战：语音播报计算器</a>
+										<span>未完成</span>
+										<div><span class="like"></span>&nbsp;<span>256</span></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					 </div>
+					<div class="account part">
+					 	<p>请重置您的账号密码</p>
+					 	<form action="">
+					 		<div class="first input">
+					 			<label for="currentPwd">
+					 				当前密码：<input type="text" id="currentPwd"/>
+					 			</label>
+					 		</div>
+					 		<div class="tips firstTips">
+					 			<div>
+					 				<span class="error"></span>
+					 				<span>请输入当前密码</span>
+				 				</div>
+				 			</div>
+					 		<div class="second input">
+					 			<label for="newPwd">
+					 				新密码：<input type="text" id="newPwd"/>
+					 			</label>
+					 		</div>
+					 		<div class="tips secondTips">
+				 				<span class="summary">密码长度在6~32个字符之间</span>
+					 			<span class="correct"></span>
+					 			<div>
+						 			<span class="error"></span>
+						 			<span>不能与原密码相同</span>
+					 			</div>
+				 			</div>
+					 		<div class="third input">
+					 			<label for="inputAgain">
+					 				再次确认密码：<input type="text" id="inputAgain"/>
+					 			</label>
+					 		</div>
+					 		<div class="tips thirdTips">
+					 			<div>
+					 				<span class="error"></span>
+					 				<span>密码输入不一致</span>
+				 				</div>
+				 			</div>
+				 			<div class="btn">提交</div>
+					 	</form>
+					 </div>
+					<div class="couponCode part">
+						<p>恭喜你以优异的成绩完成了学科学习，以下是你的奖学金，助你在大神的道路上一臂之力，以资鼓励！</p> 
+						<ul class="clearfix">
+							<li>
+								<p class="first">
+									<span class="money">3000.00</span><span class="unit">元</span>
+								</p>
+								<p class="second">来源&nbsp;:&nbsp;ios科目</p>
+								<p class="third">可用范围&nbsp;:&nbsp;可抵扣蓝鸥ios就业班学费及报名费</p>
+								<p class="fourth">有效期&nbsp;:&nbsp;2015年10月30日-2015年11月30日</p>
+							</li>
+							<li class="timeLimit">
+								<p class="first">
+									<span class="money">1000.00</span><span class="unit">元</span>
+								</p>
+								<p class="second">来源&nbsp;:&nbsp;ios科目</p>
+								<p class="third">可用范围&nbsp;:&nbsp;可抵扣蓝鸥ios就业班学费及报名费</p>
+								<p class="fourth">已过期</p>
+							</li>
+						</ul>
+					</div>
+					<div class="student part">
+						<p>在校生信息</p>
+						<form action="" class="clearfix">
+							<div>
+								<label for="stuName">
+									姓名：<input type="text" id="stuName"/>
+								</label>
+							</div>
+							<div>
+								<label for="school">
+									所在学校：<input type="text" id="school"/>
+								</label>
+							</div>
+							<div>
+								<label for="department">
+									所在系别：<input type="text" id="department"/>
+								</label>
+							</div>
+							<div>
+								<label for="major">
+									所在专业：<input type="text" id="major"/>
+								</label>
+							</div>
+							<div>
+								<label for="class">
+									所在班级：<input type="text" id="class"/>
+								</label>
+							</div>
+							<button class="btn">提交并保存</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<ul id="nav_footer" class="clearfix">
+				<li class="friend_link">
+					<span>友情链接</span>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li class="footer_more">
+					<a href="../Friendly_link/Friendly_link.html">更多>></a>
+				</li>
+			</ul>
+			<div id="footer_content" class="clearfix">
+				<ul>
+					<li class="footer_title">
+						<span>我们的实验室</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">在线编程</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">奖学制度</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">在线班级</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">课后60分钟考试</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>关于我们</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">精美吧简介</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">联系我们</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">加入我们</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>现有课程</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">ios</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">Android</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">unity3D</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">H5</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>帮助</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">联系客服</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">版权声明</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">法律声明</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">服务条款</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>反馈方式</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">电子邮箱: help@xxxxx.com</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">微信反馈:精英吧微信呢公众号</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="small_barcode"></a>
+					</li>
+				</ul>
+				<ul class="right_box">
+					<li class="footer_title">
+						<span>口袋精英APP</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="big_barcode"></a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">(扫码下载)</a>
+					</li>
+				</ul>
+			</div>
+			<h2 id="footer_bottom">蓝鸥科技有限公司©1997-2016 | 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</h2>
+		</div>
+		<script src="../js/lib/jquery.min.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/personalCenter/personalCenter.js"></script>
+	</body>
+</html>

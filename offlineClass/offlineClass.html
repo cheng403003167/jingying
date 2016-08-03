@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>线下课程</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/offlineClass/fontFaceCss/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/offlineClass/offlineClass.css"/>
+	</head>
+	<body class="offline_bodyBg">
+		<div id="header">
+			<div id="nav_head">
+				<ul class="clearfix">
+					<li class="logo">
+						<img src="../img/logo.png"/>
+					</li>
+					<li class="choose_city">
+						<p class="clearfix">北京</p>
+						<ul class="clearfix city_pop">
+							<li>							
+								<a href="javascript:void(0)">
+									<img src="../img/beijing.png" alt="" />
+									<span>北京</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/dalian.png"/>
+									<span>大连</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/zhengzhou.png"/>
+									<span>郑州</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/shanghai.png"/>
+									<span>上海</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/guangzhou.png"/>
+									<span>广州</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/xi_an.png"/>
+									<span>西安</span>
+								</a>
+							</li>
+							<li>								
+								<a href="javascript:void(0)">
+									<img src="../img/wuhan.png"/>
+									<span>武汉</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav_active">
+						<a href="../index.html?ge">首页</a>
+					</li>
+					<li>
+						<a href="../offlineClass/offline_class.html">线下课程</a>
+					</li>
+					<li>
+						<a href="../onlineClass/online_class.html">在线课程</a>
+					</li>
+					<li>
+						<a href="../school/school.html">学校</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">互联网头条</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">+提问</a>
+					</li>
+					<li class="nav_right_bar">
+						<div class="clearfix">
+							<div class="dengluafter">
+								<img src="../img/user_head.png" alt="" />
+								<p><a href="mylist.html">个人中心</a></p>
+								<ul>
+									<li class="out">
+										<a href="../login/login.html">退出</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">我是在校学生</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>	
+				</ul>
+									
+			</div>
+		</div>
+		<section id="offline_header" class="clearfix">
+			<div class="offline_picture">
+				<a href="javascript:void(0)" class="offline_logo">
+					<img src="../img/offlineCourseLogo1.png" alt="" />
+				</a>
+				<ul class="offline_logoList clearfix">
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+					<li><a href="javascript:void(0)"><img src="../img/offlineCourseLogo2.png" alt="" /></a></li>
+				</ul>
+			</div>
+	
+			<div class="offline_synopsis">
+				<h3 class="offline_courseName"></h3>
+				<p class="offline_block">
+					<span class="iconfont icon-shouye">蓝鸥科技教育有限公司</span>
+					<a href="javascript:void(0)" class="offline_frimSrc">[公司详情]</a>
+				</p>
+				<p class="offline_block"><span class="iconfont icon-locationfill"></span>北京市海淀区清河中街金</p>
+				<div>
+					<div class="offline_th clearfix">
+						<p>
+							<span>￥1288</span>
+							￥<span>1500</span>
+						</p>
+						<p>
+							报名订金
+							<span class="offline_colorGreen">￥99.9</span>
+						</p>
+					</div>
+					<div class="offline_td clearfix">
+						<p>已售<span class="offline_colorGreen">342</span></p>
+						<p>评分<span class="offline_colorGreen">8.9</span></p>
+						<p>评价<span class="offline_colorGreen">1200</span>人</p>
+					</div>
+				</div>
+				<a href="javascript:void(0)" class="offline_promptlyBuy">立即抢购</a>
+				<a href="javascript:void(0)" class="offline_scheduleConsult">预约咨询</a>
+			</div>
+		</section>
+		
+	
+		<section class="offline_detailBg clearfix">
+			<div class="offline_detailsList">
+				<ul id="offline_list" class="clearfix">
+					<li class="offline_liBorderTop">课程详情</li>
+					<li>其他课程</li>
+					<li>用户评价</li>
+				</ul>	
+				<div id="offline_courseDetails" class="offline_displayBlock">
+					<ul>
+						<li>
+							<span>课程类型：</span>
+							<p class="type"></p>
+						</li>
+						<li>
+							<span>上课人数：</span>
+							<p class="classnum"></p>
+						</li>
+						<li>
+							<span>课程周期：</span>
+							<p class="classTime"></p>
+						</li>
+						<li>
+							<span>课程价格：</span>
+							<p class="classPrice"></p>
+						</li>
+						<li>
+							<span>学校地址：</span>
+							<p class="shoolAdress"></p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<span>适合人群：</span>
+							<p class="suitable"></p>
+						</li>
+						<li>
+							<span>教学内容：</span>
+							<p class="contentOfCourses"></p>
+						</li>
+						<li>
+							<span>学习目标：</span>
+							<p class="learningGoals"></p>
+						</li>
+						<li>
+							<span>使用教材：</span>
+							<p class="coursebook"></p>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="offline_elseCourse" class="offline_displayNone">
+					<ul>
+						<li>
+							<div>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<p>￥<span>1288</span></p>
+							</div>
+							<div>		
+								<span class="iconfont icon-shouye">蓝鸥科技教育有限公司</span>
+								<span class="iconfont icon-zhongtubiao">120天</span>
+								<p>已售<span>1200</span></p>
+								<p>评分<span>8.9</span>分</p>
+								<p>价值：<span>5000</span></p>
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<p>￥<span>1288</span></p>
+							</div>
+							<div>		
+								<span class="iconfont icon-shouye">蓝鸥科技教育有限公司</span>
+								<span class="iconfont icon-zhongtubiao">120天</span>
+								<p>已售<span>1200</span></p>
+								<p>评分<span>8.9</span>分</p>
+								<p>价值：<span>5000</span></p>
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<p>￥<span>1288</span></p>
+							</div>
+							<div>		
+								<span class="iconfont icon-shouye">蓝鸥科技教育有限公司</span>
+								<span class="iconfont icon-zhongtubiao">120天</span>
+								<p>已售<span>1200</span></p>
+								<p>评分<span>8.9</span>分</p>
+								<p>价值：<span>5000</span></p>
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<a href="javascript:void(0)">一年会员-购买专用连接（仅用于购买用）-中艺摄影网校</a>
+								<p>￥<span>1288</span></p>
+							</div>
+							<div>		
+								<span class="iconfont icon-shouye">蓝鸥科技教育有限公司</span>
+								<span class="iconfont icon-zhongtubiao">120天</span>
+								<p>已售<span>1200</span></p>
+								<p>评分<span>8.9</span>分</p>
+								<p>价值：<span>5000</span></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="offline_userAppraise" class="offline_displayNone">
+					<div class="offline_commentPicture clearfix">
+						<div>
+							<p class="offline_commentScore">5.2</p>
+							<p class="offline_stars clearfix">
+								<span class="iconfont icon-xingxing offline_starColor_orange"></span>
+								<span class="iconfont icon-xingxing offline_starColor_orange"></span>
+								<span class="iconfont icon-xingxing offline_starColor_orange"></span>
+								<span class="iconfont icon-xingxing offline_starColor_orange"></span>
+								<span class="iconfont icon-xingxing offline_starColor_gray"></span>
+							</p>
+							<p>该课程共<span class="offline_sumNumber">200</span>人评论</p>
+						</div>
+						
+						<div>
+							<div class="clearfix">
+								<p>好评</p>
+								<p class="offline_line">
+									<span class="offline_goodLine"></span>
+								</p>
+								<p>
+									<span class="offline_goodNumber">123</span>人
+								</p>
+							</div>
+							<div class="offline_middleComment clearfix">
+								<p>中评</p>
+								<p class="offline_line">
+									<span class="offline_middleLine"></span>
+								</p>
+								<p>
+									<span class="offline_middleNumber">20</span>人
+								</p>
+							</div>
+							<div  class="clearfix">
+								<p>差评</p>
+								<p class="offline_line">
+									<span class="offline_badLine"></span>
+								</p>
+								<p>
+									<span class="offline_badNumber">10</span>人
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="offline_impression clearfix"> 
+						<span>大家印象：</span>
+						<ul class="offline_impressionList clearfix">
+							<li>交通便利(323)</li>
+							<li>学习气氛浓厚(1200)</li>
+							<li>交通便利(323)</li>
+							<li>学习气氛浓厚(1200)</li>
+						</ul>
+					</div>
+					
+					<div class="offline_commentArea">
+						<div>评论内容(134)</div>
+						<ul>
+							<li>
+								<div class="clearfix">							
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_stars"></span>
+									<p>刘**疯</p>
+									<p>2015-01-28</p>
+								</div>
+								
+								<p class="offline_commentText">很满意特别划算 真不错    很详细 有耐心。很满意特别划算 真不错    很详细 有耐心很满意特别划算 真不错    很详细  很满意特别划算 真不错    很详细 有耐心。很满意特别划算 真不错</p>
+							</li>
+						
+							<li>
+								<div class="clearfix">							
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_stars"></span>
+									<p>刘**疯</p>
+									<p>2015-01-28</p>
+								</div>
+								
+								<p class="offline_commentText">很满意特别划算 真不错    很详细 有耐心。很满意特别划算 真不错    很详细 有耐心很满意特别划算 真不错    很详细  很满意特别划算 真不错    很详细 有耐心。很满意特别划算 真不错</p>
+							</li>
+							
+							<li>
+								<div class="clearfix">							
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_starsOrange"></span>
+									<span class="offline_stars"></span>
+									<p>刘**疯</p>
+									<p>2015-01-28</p>
+								</div>
+								
+								<p class="offline_commentText">很满意特别划算 真不错    很详细 有耐心。很满意特别划算 真不错    很详细 有耐心很满意特别划算 真不错    很详细  很满意特别划算 真不错    很详细 有耐心。很满意特别划算 真不错</p>
+							</li>
+						</ul>
+						<div>
+							<ul id="offline_page"class="clearfix">
+								<li id="offline_perviousPage" class="offline_pageNumber">上一页</li>
+								<li class="offline_pageNumber offline_pageCheck">1</li>
+								<li class="offline_pageNumber">2</li>
+								<li class="offline_pageNumber">3</li>
+								<li class="offline_pageNumber">4</li>
+								<li class="offline_pageNumber">5</li>
+								<li class="offline_pageNumber">6</li>
+								<li class="offline_pageNumber">7</li>
+								<li class="offline_omit">...</li>
+								<li class="offline_pageNumber">100</li>
+								<li id="offline_nextPage" class="offline_pageNumber">下一页</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+
+
+		<div class="offline_courseRight">
+			<div class="offline_hotCourse">
+				<p class="clearfix">
+					<span class="iconfont icon-huore offline_colorGreen"></span>
+					<span>热销课程</span>
+					<a href="javascript:void(0)" class="offline_moreCourse">更多</a>
+				</p>
+				<ul>
+					<li>
+						<a href="javascript:void(0)">
+							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
+							<div>
+								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
+								<p class="offline_site">北京市海淀区清河中街金</p>
+								<span>￥1288</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
+							<div>
+								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
+								<p class="offline_site">北京市海淀区清河中街金</p>
+								<span>￥1288</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
+							<div>
+								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
+								<p class="offline_site">北京市海淀区清河中街金</p>
+								<span>￥1288</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
+							<div>
+								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
+								<p class="offline_site">北京市海淀区清河中街金</p>
+								<span>￥1288</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="###">
+							<div><img src="../img/offlineCourseLogo2.png" alt="" /></div>
+							<div>
+								<p class="offline_courseTitle">4个月IOS高薪就业班4个月IOS高薪就业班</p>
+								<p class="offline_site">北京市海淀区清河中街金</p>
+								<span>￥1288</span>
+							</div>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		
+			<div class="offline_question">
+				<p>
+					<span class="iconfont icon-wenhaofill"></span>
+					<span>有疑问？</span>
+				</p>
+				<ul>
+					<li>
+						<span>A：</span>
+						<p>报名定金是个什么鬼？</p>
+					</li>
+					<li>
+						<span>B：</span>
+						<p>预售款只能通过报名官方活动来实现。并且需要缴纳保证金，定金就是保证金。</p>
+					</li>
+					<li>
+						<span>A：</span>
+						<p>购买本VIP课程后请务必联系工作人员录播课程以及在架的</p>
+					</li>
+					<li>
+						<span>B：</span>
+						<p>当年18户村民按下红手印，签订大包干契约情景。总书记感慨道：“当年贴着身家性命干的事，变成中国改革的一声惊雷，成为中国改革的标志。</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</section>
+	
+		<div class="offline_mask">
+			<div>
+				<div class="clearfix">
+					<p>预约咨询</p>
+					<a href="###" class="offline_date"></a>
+				</div>
+				<div class="offline_writeDatum">
+					<p>留下您的联系电话，我们会在第一时间和您取得联系</p>
+					<div class="clearfix">
+						<span >您的姓名：</span>
+						<input type="text"  class="offline_userName"/>
+						<p class="offline_TIPS offline_TIPS1">请您填写姓名</p>
+						<p class="offline_TIPS offline_TIPS6">您填写姓名有误</p>
+					</div>
+					<div class="clearfix">
+						<span>您的电话：</span>
+						<input type="text" class="offline_userTell" />
+						<p class="offline_TIPS offline_TIPS2">请您填写电话</p>
+						<p class="offline_TIPS offline_TIPS3">请您填写正确的电话</p>
+					</div>
+					<div class="offline_likeCourse clearfix">
+						<span>意向课程：</span>
+						<p id="offline_courseImpression" class="offline_topArrow">请选择课程印象</p>
+						<ul class="offline_courseOption">
+							<li>IOS</li>
+							<li>Android</li>
+							<li>HTML5</li>
+							<li>Unity-3D</li>
+							<li>产品经理</li>
+						</ul>
+						<p class="offline_TIPS offline_TIPS4">请您选择意向课程</p>
+					</div>
+				</div>
+				<div>
+					<a href="###" id="offline_submit">确定</a>
+					<a href="###" class="offline_date">取消</a>
+					<a href=""></a>
+				</div>
+				<div>
+					<p>留下您的联系电话，我们会在第一时间和您取得联系</p>
+					<div>您的姓名：<input type="text" /></div>
+					<div>您的电话：<input type="text" /></div>
+					<div>意向课程：<p></p>
+					</div>
+					<ul></ul>
+				</div>
+				<div>
+					<a href="">确定</a>
+					<a href="">取消</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="footer">
+			<ul id="nav_footer" class="clearfix">
+				<li class="friend_link">
+					<span>友情链接</span>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">蓝欧科技</a>
+				</li>
+				<li class="footer_more">
+					<a href="../Friendly_link/Friendly_link.html">更多>></a>
+				</li>
+			</ul>
+			<div id="footer_content" class="clearfix">
+				<ul>
+					<li class="footer_title">
+						<span>我们的实验室</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">在线编程</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">奖学制度</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">在线班级</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">课后60分钟考试</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>关于我们</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">精美吧简介</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">联系我们</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">加入我们</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>现有课程</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">ios</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">Android</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">unity3D</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">H5</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>帮助</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">联系客服</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">版权声明</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">法律声明</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">服务条款</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="footer_title">
+						<span>反馈方式</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)">电子邮箱: help@xxxxx.com</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">微信反馈:精英吧微信呢公众号</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="small_barcode"></a>
+					</li>
+				</ul>
+				<ul class="right_box">
+					<li class="footer_title">
+						<span>口袋精英APP</span>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="big_barcode"></a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">(扫码下载)</a>
+					</li>
+				</ul>
+			</div>
+			<h2 id="footer_bottom">蓝鸥科技有限公司©1997-2016 | 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</h2>
+		</div>
+		<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript" src="../js/offlineClass/offlineClass.js"></script>
+	</body>
+</html>

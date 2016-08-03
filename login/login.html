@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login/login.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<div id="nav_head">
+				<ul class="clearfix">
+					<li class="logo">
+						<img src="../img/logo.png"/>
+					</li>
+					<li class="deng">
+						<a href="javascript:void(0)">+提问</a>
+					</li>	
+					<li class="deng">
+						<a href="javascript:void(0)">互联网头条</a>
+					</li>
+					<li class="deng">
+						<a href="../index.html?wei">课程</a>
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<div id="wraper">
+			<div class="conn">
+				<div class="list">
+					<p class="tap clearfix">
+						<a href="javascript:void(0)" class="col1 fontSize">
+							登录
+							<span class="bottomLine lineShow"></span>
+						</a>
+						<a href="javascript:void(0)" class="col1">
+							注册
+							<span class="bottomLine"></span>
+						</a>
+					</p>
+					<div class="denglu">
+						<div class="inputList clearfix">
+							<div class="phonenum vermid">
+								<span class="minbg minbg1"></span>
+								<input type="text" placeholder="请输入手机号" class="input user"/>
+							</div>
+							<p class="warn warnPhone1">手机号码不能为空</p>
+							<p class="warn warnPhone2">手机号码格式不正确</p>
+							<p class="warn warnPhone3">手机号码或密码错误</p>
+							<div class="phonenum vermid">
+								<span class="minbg minbg2"></span>
+								<input type="password" placeholder="请输入密码" class="input pass"/>
+							</div>
+							<p class="warn warnPwd">密码不能为空</p>
+							<div class="codetext vermid">
+								<span class="minbg minbg3"></span>
+								<input type="text" placeholder="验证码" class="input input2"/>
+							</div>
+							<img src="../PHP/login/code.php" class="code floatRight" alt="" />
+							<p class="warn warnCode">验证码不能为空</p>
+							<p class="warn warnCode2">请输入正确的验证码</p>
+							<label for="" class="clearfix">
+								<input type="checkbox" class="cl" name="vehicle" value="Bike" checked="checked" />记住我
+								<a href="javascript:void(0)" class="floatRight">忘记密码？</a>
+							</label>
+							<a href="javascript:void(0)" class="up">登&nbsp;陆</a>
+							<div class="otheruser">
+								<p class="qui clearfix">
+									<span class="line"></span>
+									<span class="centerText">合作方登陆账号</span>
+									<span class="line"></span>
+								</p>
+								<p class="lianjie">
+									<a href="javascript:void(0)" class="other qq"></a>
+									<a href="javascript:void(0)" class="other sina"></a>
+									<a href="javascript:void(0)" class="other weixin"></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="logon">
+						<div class="inputList clearfix">
+							<div class="phonenum vermid">
+								<span class="minbg minbg1"></span>
+								<input type="text" placeholder="请输入手机号" class="input user"/>
+							</div>
+							<p class="warn warnPhone1">手机号码不能为空</p>
+							<p class="warn warnPhone2">手机号码格式不正确</p>
+							<div class="codetext vermid">
+								<span class="minbg minbg3"></span>
+								<input type="text" placeholder="验证码" class="input input2"/>
+							</div>
+							<a href="javascript:void(0)"  class="codebtn floatRight bt1">获取验证码</a>
+							<a  class="codebtn floatRight bt2"><span>60</span>s</a>
+							<p class="warn warnCode">验证码不能为空</p>
+							<p class="warn warnCode2">请输入正确的验证码</p>
+							<div class="phonenum vermid">
+								<span class="minbg minbg2"></span>
+								<input type="password" placeholder="请输入密码" class="input pass"/>
+							</div>
+							<p class="warn warnPwd">密码不能为空</p>
+							<div class="phonenum vermid">
+								<span class="minbg minbg4"></span>
+								<input type="password" placeholder="请重新输入密码" class="input passre"/>
+							</div>
+							<p class="warn warnPwd2">请再次输入密码</p>
+							<p class="warn warnPwd3">两次密码不一致</p>
+							<label for="" class="clearfix">
+								<input type="checkbox" class="cl" name="vehicle" value="Bike" checked="checked" />同意网站条款
+							</label>
+							<p class="warn warnPwd4">请钩选同意网站条款</p>
+							<a href="javascript:void(0)" class="up">提&nbsp;交</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer2">
+			<h2 id="footer_bottom2">蓝鸥科技有限公司©1997-2016 | 北京市海淀区清河毛纺路路南甲36号金五星商业大厦5层</h2>
+		</div>
+		<script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+		<script src="../js/login/login.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script type="text/javascript">
+			$(".up").on("click",function(){
+				var $x = 0,$panduan = 0;
+				$.each($(".warn"),function(){
+					if($(this).css("display") == "block"){
+						$x++;
+					}else{
+						$x = $x;
+					}
+				})
+				if($(".denglu").css("display") == "block"){
+					$panduan = 0;
+				}else{
+					$panduan = 1;
+				}
+				if($x<=0){
+					$.ajax({
+						type: "POST",
+						url:"../PHP/login/loginUser.php",
+						data:{
+							username:$('.user').eq($panduan).val(),
+							pass:$(".pass").eq($panduan).val(),
+							t:$panduan,
+							code:$(".input2").eq($panduan).val()
+						},
+						success:function(data){
+							console.log(data);
+							if(data=="noUser"){
+								$(".warnPhone3").show();
+							}else if(data == "noCode"){
+								$(".warnCode2").eq(0).show();
+							}else if(data == "ok"){
+								location.href = "../index.html?cheng";
+							}
+						}
+					})
+				}
+			})
+		</script>
+	</body>
+</html>

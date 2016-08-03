@@ -1,4 +1,5 @@
 <?php
+	header('Content-Type:text/html;charset=utf8');
 	$url = "localhost:3306";
 	$root = "root";
 	$pwd = "root";	

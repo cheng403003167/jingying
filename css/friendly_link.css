@@ -1,0 +1,59 @@
+body{
+	background-color: #f5f5f5;
+}
+#wrapper{
+	width: 1224px;
+	margin: 40px auto 0;
+}
+.title{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.conn{
+	background-color: #fff;
+	text-align: center;
+	padding: 50px 0;
+	margin-bottom: 50px;
+}
+.inn1{
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+}
+.inn2{
+	margin-top: 30px;
+}
+.part{
+	width: 152px;
+	height: 50px;
+	float: left;
+	margin: 0 8px;
+	background: url(../img/active/chaining.png) no-repeat;
+	background-size: 500%;
+}
+.sina{
+	background-position-x: -608px;
+}
+.cn21{
+	background-position-x: 0;
+}
+.kr36{
+	background-position-x: -152px;
+}
+.jiemo{
+	background-position-x: -304px;
+}
+.qq{
+	background-position-x: -456px;
+}
+.text{
+	font-size: 14px;
+	margin: 0 13px;
+	color: #000;
+}
+.text2{
+	margin: 0 13px;
+}
+.conn p:nth-of-type(n+2){
+	margin-top: 20px;
+}

@@ -1,0 +1,177 @@
+
+.conn{
+	width: 1224px;
+	margin: 30px auto;
+}
+a{
+	color: #000;
+}
+aside{
+	width: 263px;
+	padding: 30px 16px 35px;
+	background-color: #fff;
+	float: right;
+	font-size: 16px;
+}
+.playFor{
+	width: 915px;
+	float: left;
+	background-color: #fff;
+}
+.selSure{
+	padding: 35px 30px 46px;
+}
+.logos{
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../../img/signUp-1.png) left 0 no-repeat;
+}
+.rightText{
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.mintext{
+	margin-left: 16px;
+}
+.num{
+	color: #ea9b65;
+}
+.mintext,.num{
+	font-size: 16px;
+}
+.everyMethod{
+	font-size: 16px;
+	margin: 28px 0 44px;
+	border: 1px solid #e8e8e8;
+	padding: 30px 18px;
+}
+.method{
+	display: inline-block;
+	margin-bottom: 28px;
+}
+.method span{
+	vertical-align: middle;
+}
+.arr{
+	width: 14px;
+	height: 14px;
+	margin-right: 12px;
+	display: inline-block;
+	background: url(../../img/signUp-3.png) -19px center no-repeat;
+}
+.bank{
+	display: none;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.bank a{
+	width: 152px;
+	height: 54px;
+	display: inline-block;
+	margin: 0 7px;
+	float: left;
+	background: url(../../img/signUp-2.png) no-repeat;
+}
+.bank .long{
+	background-position-x: right;
+}
+.nole{
+	margin-left: 0 !important;
+}
+.nori{
+	margin-right: 0 !important;
+}
+.bank>p:nth-of-type(n+2){
+	margin-top: 15px;
+}
+.bao{
+	background-position: 0 -62px !important;
+}
+.wei{
+	background-position: right -62px !important;
+}
+.playPhone{
+	padding-top: 30px;
+	font-size: 16px;
+	border-top: 1px dashed #ccc;
+}
+.logo2{
+	background-position-x: -42px;
+}
+.indent{
+	margin-top: 30px;
+	border: 1px solid #e8e8e8;
+	padding: 30px 20px;
+}
+table{
+	text-align: center;
+	width: 100%;
+}
+th{
+	height: 38px;
+	line-height: 38px;
+	background-color: #f5f5f5;
+}
+td{
+	height: 74px;
+	line-height: 74px;
+}
+table,th,td{
+	font-size: 14px;
+	border: 1px solid #e8e8e8;
+	border-collapse: collapse;
+}
+.btn{
+	height: 80px;
+	padding: 0 30px;
+	background-color: #fafafa;
+	border: 1px solid #e8e8e8;
+}
+.btn a{
+	width: 180px;
+	height: 42px;
+	float: right;
+	color: #fff;
+	margin-top: 19px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 42px;
+	background-color: #ea9b65;
+}
+
+
+
+/*侧边栏*/
+.p1 span{
+	vertical-align: middle;
+}
+.umbrella,.dun,.ie{
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	display: inline-block;
+	background: url(../../img/signUp-1.png) no-repeat;
+	background-position: -24px -2px;
+}
+.dun,.ie{
+	width: 27px;
+	height: 30px;
+	float: left;
+	margin-right: 14px;
+	background-position: 0 -30px;
+}
+.p2{
+	font-size: 14px;
+	line-height: 14px;
+	margin: 35px 0;
+}
+.p3{
+	margin: 0;
+}
+.ie{
+	background-position: right -30px;
+}
